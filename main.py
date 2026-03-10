@@ -4,6 +4,7 @@ import gym
 import argparse
 import os
 import d4rl
+import d4rl.locomotion
 
 import utils
 import TD3_BC

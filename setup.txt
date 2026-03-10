@@ -1,0 +1,15 @@
+mjrl install: pip install git+https://github.com/aravindr93/mjrl.git
+
+downgrade cython: pip install "cython<3"
+
+correct version of mujoco-py is 2.1.2.14
+
+osmesa: sudo apt install -y libosmesa6-dev libgl1-mesa-dev libgl1-mesa-glx libglew-dev patchelf
+
+installing mujoco:
+mkdir ~/.mujoco 
+cd ~/.mujoco 
+wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz
+tar -xvzf mujoco210-linux-x86_64.tar.gz
+export MUJOCO_PY_MUJOCO_PATH=$HOME/.mujoco/mujoco210
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.mujoco/mujoco210/bin
