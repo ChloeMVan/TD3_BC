@@ -8,6 +8,7 @@ import d4rl.locomotion
 
 import utils
 import TD3_BC
+import TD3
 
 
 # Runs policy for X episodes and returns D4RL score
@@ -109,7 +110,8 @@ if __name__ == "__main__":
 	else:
 		mean,std = 0,1
 	
-	print("offline")
+	# ----------------------- offline -----------------------------------
+	print("OFFLINE: EXACT SAME AS MAIN.PY")
 	evaluations = []
 	for t in range(int(args.max_timesteps)):
 		policy.train(replay_buffer, args.batch_size)
@@ -121,16 +123,35 @@ if __name__ == "__main__":
 			if args.save_model: 
 				policy.save(f"./models/{file_name}")
 	
+	# ------------------------- online ------------------------------------
 	print("Starting ONLINE training") 
+
+	kwargs = {
+		"state_dim": state_dim,
+		"action_dim": action_dim,
+		"max_action": max_action,
+		"discount": args.discount,
+		"tau": args.tau,
+		# TD3
+		"policy_noise": args.policy_noise * max_action,
+		"noise_clip": args.noise_clip * max_action,
+		"policy_freq": args.policy_freq,
+	}
+
+	td3policy = TD3.TD3(**kwargs) # initialize td3 policy
+
+	td3policy.actor.load_state_dict(policy.actor.state_dict())
+	td3policy.critic.load_state_dict(policy.critic.state_dict())
+
+	td3policy.actor_target.load_state_dict(policy.actor_target.state_dict())
+	td3policy.critic_target.load_state_dict(policy.critic_target.state_dict())
+
 	state, done = env.reset(), False
 	state = (np.array(state).reshape(1,-1) - mean)/std
 
-	online_steps = int(args.max_timesteps)
-
-	for t in range(online_steps):
-
+	for t in range(int(args.max_timesteps)):
 		# Select action
-		action = policy.select_action(state)
+		action = td3policy.select_action(state)
 		action = (
 			action
 			+ np.random.normal(0, max_action * args.expl_noise, size=action_dim)
@@ -143,7 +164,7 @@ if __name__ == "__main__":
 		replay_buffer.add(state, action, next_state_norm, reward, done)
 
 		# Train policy
-		policy.train(replay_buffer, args.batch_size)
+		td3policy.train(replay_buffer, args.batch_size)
 
 		state = next_state_norm
 
@@ -154,8 +175,8 @@ if __name__ == "__main__":
 		# Evaluation
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Online] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std))
+			evaluations.append(eval_policy(td3policy, args.env, args.seed, mean, std))
 			np.save(f"./results/{file_name}", evaluations)
 
 			if args.save_model:
-				policy.save(f"./models/{file_name}_online")
+				td3policy.save(f"./models/{file_name}_online")
