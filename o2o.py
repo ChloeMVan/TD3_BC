@@ -111,20 +111,20 @@ if __name__ == "__main__":
 		mean,std = 0,1
 	
 	# ----------------------- offline -----------------------------------
-	print("OFFLINE: EXACT SAME AS MAIN.PY")
+	print("STARTING OFFLINE TRAINING")
 	evaluations = []
 	for t in range(int(args.max_timesteps)):
 		policy.train(replay_buffer, args.batch_size)
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
-			print(f"Time steps: {t+1}")
+			print(f"[Offline] Time steps: {t+1}")
 			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std))
 			np.save(f"./results/{file_name}", evaluations)
 			if args.save_model: 
 				policy.save(f"./models/{file_name}")
 	
 	# ------------------------- online ------------------------------------
-	print("Starting ONLINE training") 
+	print("STARTING ONLINE TRAINING") 
 
 	kwargs = {
 		"state_dim": state_dim,
