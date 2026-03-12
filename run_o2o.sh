@@ -3,7 +3,7 @@
 # Script to reproduce results
 
 envs=(
-	"hopper-medium-v2"
+	"hopper-expert-v2"
 	)
 
 for ((i=0;i<1;i+=1))
