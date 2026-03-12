@@ -165,8 +165,9 @@ if __name__ == "__main__":
 		# Store new transition
 		online_buffer.add(state, action, next_state_norm, reward, done)
 
-		# Train policy
-		td3policy.train(online_buffer, args.batch_size)
+		# Train policy only once we have enough transitions
+		if online_buffer.size >= args.batch_size:
+			td3policy.train(online_buffer, args.batch_size)
 
 		state = next_state_norm
 
