@@ -32,8 +32,7 @@ def eval_policy(policy, env_name, seed, eval_episodes=10):
     # Fix 3: Create environment and set seed properly
     eval_env = gym.make(d4rl_env_name)
     
-    # Fix 4: Use reset(seed=seed) instead of deprecated env.seed()
-    state, _ = eval_env.reset(seed=seed + 100)  # Gym's new way
+    eval_env.seed(seed + 100)
     
     avg_reward = 0.
     for _ in range(eval_episodes):
