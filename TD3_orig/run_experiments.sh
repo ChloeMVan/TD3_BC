@@ -11,7 +11,7 @@ do
 
 	python main.py \
 	--policy "TD3" \
-	--env "Hopper-v3" \
+	--env "hopper-medium-v0" \
 	--seed $i
 
 	# python main.py \
