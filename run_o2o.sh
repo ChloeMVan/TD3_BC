@@ -6,7 +6,7 @@ envs=(
 	"hopper-medium-v0"
 	)
 
-for ((i=0;i<5;i+=1))
+for ((i=0;i<1;i+=1))
 do 
 	for env in ${envs[*]}
 	do
