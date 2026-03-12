@@ -75,7 +75,7 @@ if __name__ == "__main__":
 	parser.add_argument("--policy_noise", default=0.2)              # Noise added to target policy during critic update
 	parser.add_argument("--noise_clip", default=0.5)                # Range to clip target policy noise
 	parser.add_argument("--policy_freq", default=2, type=int)       # Frequency of delayed policy updates
-	parser.add_argument("--start_timesteps", default=25e3, type=int)# Time steps initial random policy is used
+	parser.add_argument("--start_timesteps", default=0, type=int)# Time steps initial random policy is used
 	# TD3 + BC
 	parser.add_argument("--alpha", default=2.5)
 	parser.add_argument("--normalize", default=True)
@@ -149,7 +149,7 @@ if __name__ == "__main__":
 	print("STARTING ONLINE TRAINING") 
 
 	env = gym.make(args.online_env)
-
+	online_buffer = utils.ReplayBuffer(state_dim, action_dim)
 	kwargs = {
 		"state_dim": state_dim,
 		"action_dim": action_dim,
@@ -185,6 +185,7 @@ if __name__ == "__main__":
 		if t < args.start_timesteps:
 			action = env.action_space.sample()
 		else:
+			norm_state = (np.array(state).reshape(1,-1) - mean) / std
 			action = (
 				td3policy.select_action(np.array(state))
 				+ np.random.normal(0, max_action * args.expl_noise, size=action_dim)
@@ -195,14 +196,15 @@ if __name__ == "__main__":
 		done_bool = float(done) if episode_timesteps < env._max_episode_steps else 0
 
 		# Store data in replay buffer
-		replay_buffer.add(state, action, next_state, reward, done_bool)
+		norm_next_state = (np.array(next_state).reshape(1,-1) - mean) / std
+		online_buffer.add(state, action, next_state, reward, done_bool)
 
 		state = next_state
 		episode_reward += reward
 
 		# Train agent 
 		if t >= args.start_timesteps:
-			td3policy.train(replay_buffer, args.batch_size)
+			td3policy.train(online_buffer, args.batch_size)
 
 		if done: 
 			# +1 to account for 0 indexing. +0 on ep_timesteps since it will increment +1 even if done=True
