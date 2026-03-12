@@ -13,7 +13,7 @@ import TD3
 
 # Runs policy for X episodes and returns D4RL score
 # A fixed seed is used for the eval environment
-def eval_policy(policy, env_name, seed, mean, std, seed_offset=100, eval_episodes=10):
+def eval_policy(policy, env_name, seed, mean, std, seed_offset=100, eval_episodes=5):
 	eval_env = gym.make(env_name)
 	eval_env.seed(seed + seed_offset)
 
@@ -148,6 +148,8 @@ if __name__ == "__main__":
 
 	state, done = env.reset(), False
 	state = (np.array(state).reshape(1,-1) - mean)/std
+	online_buffer = utils.ReplayBuffer(state_dim, action_dim)
+
 
 	for t in range(int(args.max_timesteps)):
 		# Select action
@@ -161,10 +163,10 @@ if __name__ == "__main__":
 		next_state_norm = (np.array(next_state).reshape(1,-1) - mean)/std
 
 		# Store new transition
-		replay_buffer.add(state, action, next_state_norm, reward, done)
+		online_buffer.add(state, action, next_state_norm, reward, done)
 
 		# Train policy
-		td3policy.train(replay_buffer, args.batch_size)
+		td3policy.train(online_buffer, args.batch_size)
 
 		state = next_state_norm
 
