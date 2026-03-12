@@ -95,7 +95,7 @@ if __name__ == "__main__":
 	elif args.policy == "DDPG":
 		policy = DDPG.DDPG(**kwargs)
 
-	if args.load_model != "":
+	if args.load_model != "": # CHECK THIS 
 		policy_file = file_name if args.load_model == "default" else args.load_model
 		policy.load(f"./models/{policy_file}")
 

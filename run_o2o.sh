@@ -25,7 +25,6 @@ do
 	for env in ${envs[*]}
 	do
 		python o2o.py \
-		--env $env \
 		--seed $i
 	done
 done
