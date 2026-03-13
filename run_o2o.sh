@@ -3,7 +3,7 @@
 # Script to reproduce results
 
 envs=(
-	"hopper-random-v2"
+	"hopper-full-replay-v2"
 	)
 
 for ((i=0;i<1;i+=1))
