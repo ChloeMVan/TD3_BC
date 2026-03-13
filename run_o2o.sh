@@ -3,7 +3,7 @@
 # Script to reproduce results
 
 envs=(
-	"hopper-full-replay-v2"
+	"hopper-medium-expert-v2"
 	)
 
 for ((i=0;i<1;i+=1))
