@@ -1,6 +1,9 @@
+import os
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+
+OUTPUT_DIR = "results/graphs"
 
 # File from command line: python graph_rolling.py results/TD3_BC_hopper-random-v0_0.npy [--window 10]
 filename = sys.argv[1] if len(sys.argv) > 1 else input("Path to .npy file: ").strip()
@@ -40,15 +43,22 @@ for i in range(len(scores)):
 print("-" * 40)
 print(f"Total evaluations: {len(scores)}\n")
 
+# Extract environment from filename (e.g. TD3_BC_hopper-expert-v2_0.npy -> hopper-expert)
+name_no_ext = os.path.basename(filename).replace(".npy", "")
+env = name_no_ext.replace("TD3_BC_", "").split("-v")[0] if "TD3_BC_" in name_no_ext else name_no_ext
+
 plt.figure(figsize=(8, 5))
 plt.plot(steps, scores, alpha=0.4, label="Raw score")
 plt.plot(steps_rolling, rolling, linewidth=2, label=f"Rolling avg (window={window})")
+plt.axvline(x=500_000, color="red", linestyle="--", linewidth=1.5, label="Offline → Online")
 plt.xlabel("Step")
 plt.ylabel("D4RL score")
-plt.title("D4RL score vs step (rolling average)")
+plt.title(f"{env} — D4RL score vs time step")
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-out_path = filename.replace(".npy", "_rolling_plot.png")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+basename = os.path.basename(filename).replace(".npy", "_rolling_plot.png")
+out_path = os.path.join(OUTPUT_DIR, basename)
 plt.savefig(out_path)
 plt.show()
