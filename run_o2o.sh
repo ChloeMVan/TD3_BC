@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script to reproduce results
+# hello
 
 envs=(
 	"hopper-medium-expert-v2"
