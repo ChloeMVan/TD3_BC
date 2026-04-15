@@ -10,7 +10,7 @@ for ((i=0;i<1;i+=1))
 do 
 	for env in ${envs[*]}
 	do
-		python o2o.py \
+		python online.py \
 		--env $env \
 		--seed $i
 	done
