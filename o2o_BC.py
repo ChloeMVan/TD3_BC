@@ -95,7 +95,6 @@ if __name__ == "__main__":
 		"policy_freq": args.policy_freq,
 		# TD3 + BC
 		"alpha": args.alpha,
-		"decay_rate": args.decay_rate
 	}
 
 	# Initialize policy
