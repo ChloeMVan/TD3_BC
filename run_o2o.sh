@@ -24,8 +24,9 @@ for ((i=0;i<1;i+=1))
 do 
 	for env in ${envs[*]}
 	do
-		python o2o.py \
+		python o2o_BC.py \
 		--env $env \
-		--seed $i
+		--seed $i \
+		--decay_rate 1e-1
 	done
 done
