@@ -11,10 +11,10 @@ envs=(
 	# "walker2d-medium-v2"
 	# "halfcheetah-expert-v0"
 	# "hopper-expert-v0"
-	# "walker2d-expert-v2" *
+	"walker2d-expert-v2"
 	# "halfcheetah-medium-expert-v0"
 	# "hopper-medium-expert-v0"
-	"walker2d-medium-expert-v2"
+	# "walker2d-medium-expert-v2"
 	# "halfcheetah-medium-replay-v0"
 	# "hopper-medium-replay-v0"
 	# "walker2d-medium-replay-v0"
@@ -24,8 +24,9 @@ for ((i=0;i<1;i+=1))
 do 
 	for env in ${envs[*]}
 	do
-		python o2o.py \
+		python o2o_BC.py \
 		--env $env \
-		--seed $i
+		--seed $i \
+		--decay_rate 1e-1
 	done
 done
