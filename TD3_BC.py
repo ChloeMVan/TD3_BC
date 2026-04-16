@@ -100,7 +100,7 @@ class TD3_BC(object):
 		return self.actor(state).cpu().data.numpy().flatten()
 
 
-	def train(self, replay_buffer, batch_size=256):
+	def train(self, replay_buffer, batch_size=256, beta=1.0):
 		self.total_it += 1
 
 		# Sample replay buffer 
@@ -125,7 +125,7 @@ class TD3_BC(object):
 		current_Q1, current_Q2 = self.critic(state, action)
 
 		# Compute critic loss
-		critic_loss = F.mse_loss(current_Q1, target_Q) + F.mse_loss(current_Q2, target_Q)
+		critic_loss = F.mse_loss(current_Q1, target_Q) + beta * F.mse_loss(current_Q2, target_Q)
 
 		# Optimize the critic
 		self.critic_optimizer.zero_grad()
