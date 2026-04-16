@@ -8,10 +8,10 @@ envs=(
 	# "walker2d-random-v2"
 	# "halfcheetah-medium-v0"
 	# "hopper-medium-v0"
-	"walker2d-medium-v2"
+	# "walker2d-medium-v2"
 	# "halfcheetah-expert-v0"
 	# "hopper-expert-v0"
-	# "walker2d-expert-v2" *
+	"walker2d-expert-v2" *
 	# "halfcheetah-medium-expert-v0"
 	# "hopper-medium-expert-v0"
 	# "walker2d-medium-expert-v2" *
