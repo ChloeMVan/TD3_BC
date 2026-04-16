@@ -139,7 +139,10 @@ if __name__ == "__main__":
 		"noise_clip": args.noise_clip * max_action,
 		"policy_freq": args.policy_freq,
 	}
-
+	total_online_steps = int(args.max_timesteps)
+	state, done = env.reset(), False
+	state = (np.array(state).reshape(1,-1) - mean)/std
+    
 	# td3policy = TD3.TD3(**kwargs) # initialize td3 policy
 
 	# td3policy.actor.load_state_dict(policy.actor.state_dict())
@@ -149,11 +152,6 @@ if __name__ == "__main__":
 	# td3policy.critic_target.load_state_dict(policy.critic_target.state_dict())
 	
     # we use policy instead from offline
-
-	state, done = env.reset(), False
-	state = (np.array(state).reshape(1,-1) - mean)/std
-	# online_buffer = utils.ReplayBuffer(state_dim, action_dim)
-    total_online_steps = int(args.max_timesteps)
 
 	for t in range(total_online_steps):
 		beta = max(0.0, np.exp(-decay_rate * t))  # linear decay from 1 to 0
