@@ -155,8 +155,8 @@ if __name__ == "__main__":
 	root_num = args.root_num
 
 	for t in range(total_online_steps):
-		print((pow(t, 1.0/root_num)), root_num)
-		beta = max(0.0, 1.0/(pow(t, 1.0/root_num)))  # linear decay from 1 to 0
+		# print((pow(t, 1.0/root_num)), root_num)
+		beta = max(0.0, 1.0/(pow(t+1, 1.0/root_num)))  # linear decay from 1 to 0
 		
 		# Select action
 		action = policy.select_action(state)
