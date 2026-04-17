@@ -57,10 +57,11 @@ if __name__ == "__main__":
 	# TD3 + BC
 	parser.add_argument("--alpha", default=2.5)
 	parser.add_argument("--normalize", default=True)
-	parser.add_argument("--decay_rate", default=1e-1, type=float)
+	parser.add_argument("--root_num", type=float)
+	parser.add_argument("--file_tag")
 	args = parser.parse_args()
 
-	file_name = f"{args.policy}_{args.env}_{args.seed}"
+	file_name = f"{args.file_tag}_{args.policy}_{args.env}_{args.seed}"
 	print("---------------------------------------")
 	print(f"Policy: {args.policy}, Env: {args.env}, Seed: {args.seed}")
 	print("---------------------------------------")
@@ -153,7 +154,7 @@ if __name__ == "__main__":
     # we use policy instead from offline
 
 	for t in range(total_online_steps):
-		beta = max(0.0, np.exp(-decay_rate * t))  # linear decay from 1 to 0
+		beta = max(0.0, 1.0/pow(t, 1.0/root_num))  # linear decay from 1 to 0
 		
 		# Select action
 		action = policy.select_action(state)

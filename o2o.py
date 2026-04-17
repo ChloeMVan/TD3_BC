@@ -57,9 +57,10 @@ if __name__ == "__main__":
 	# TD3 + BC
 	parser.add_argument("--alpha", default=2.5)
 	parser.add_argument("--normalize", default=True)
+	parser.add_argument("--file_tag")
 	args = parser.parse_args()
 
-	file_name = f"{args.policy}_{args.env}_{args.seed}"
+	file_name = f"{args.file_tag}_{args.policy}_{args.env}_{args.seed}"
 	print("---------------------------------------")
 	print(f"Policy: {args.policy}, Env: {args.env}, Seed: {args.seed}")
 	print("---------------------------------------")
