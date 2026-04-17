@@ -25,9 +25,9 @@ do
 	for env in ${envs[*]}
 	do
 		python o2o_BC.py \
-        --file_tag 'BC_Mid' \
+        --file_tag 'BC_Slow' \
 		--env $env \
 		--seed $i \
-		--root_num 2.3
+		--root_num 2.5
 	done
 done
