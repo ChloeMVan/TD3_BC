@@ -43,7 +43,7 @@ if __name__ == "__main__":
 	parser.add_argument("--env", default="hopper-expert-v0")        # OpenAI gym environment name
 	parser.add_argument("--seed", default=0, type=int)              # Sets Gym, PyTorch and Numpy seeds
 	parser.add_argument("--eval_freq", default=5e3, type=int)       # How often (time steps) we evaluate
-	parser.add_argument("--max_timesteps", default=500_000, type=int)   # Max time steps to run environment
+	parser.add_argument("--max_timesteps", default=1, type=int)   # Max time steps to run environment
 	parser.add_argument("--save_model", action="store_true")        # Save model and optimizer parameters
 	parser.add_argument("--load_model", default="")                 # Model load file name, "" doesn't load, "default" uses file_name
 	# TD3
@@ -152,6 +152,7 @@ if __name__ == "__main__":
 	# td3policy.critic_target.load_state_dict(policy.critic_target.state_dict())
 	
     # we use policy instead from offline
+	root_num = args.root_num
 
 	for t in range(total_online_steps):
 		beta = max(0.0, 1.0/pow(t, 1.0/root_num))  # linear decay from 1 to 0
