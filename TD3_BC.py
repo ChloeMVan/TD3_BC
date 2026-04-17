@@ -125,7 +125,7 @@ class TD3_BC(object):
 		current_Q1, current_Q2 = self.critic(state, action)
 
 		# Compute critic loss
-		critic_loss = F.mse_loss(current_Q1, target_Q) + beta * F.mse_loss(current_Q2, target_Q)
+		critic_loss = F.mse_loss(current_Q1, target_Q) + F.mse_loss(current_Q2, target_Q)
 
 		# Optimize the critic
 		self.critic_optimizer.zero_grad()
@@ -140,7 +140,7 @@ class TD3_BC(object):
 			Q = self.critic.Q1(state, pi)
 			lmbda = self.alpha/Q.abs().mean().detach()
 
-			actor_loss = -lmbda * Q.mean() + F.mse_loss(pi, action) 
+			actor_loss = -lmbda * Q.mean() + beta * F.mse_loss(pi, action) 
 			
 			# Optimize the actor 
 			self.actor_optimizer.zero_grad()
