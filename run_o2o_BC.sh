@@ -2,6 +2,8 @@
 
 # Script to reproduce results
 
+# Fast - 2 Mid - 2.3 Slow - 2.5
+
 envs=(
 	# "halfcheetah-random-v0"
 	# "hopper-random-v0"
