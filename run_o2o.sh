@@ -24,8 +24,8 @@ for ((i=0;i<1;i+=1))
 do 
 	for env in ${envs[*]}
 	do
-		python online.py \
-		--file_tag 'org'
+		python o2o.py \
+		--file_tag 'o2o'
 		--env $env \
 		--seed $i
 	done

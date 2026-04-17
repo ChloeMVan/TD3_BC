@@ -26,8 +26,10 @@ scores = np.load(filename)
 steps = (np.arange(len(scores)) + 1) * eval_freq  # step at each evaluation
 
 # Rolling average (valid = only where full window is available)
-rolling = np.convolve(scores, np.ones(window) / window, mode="valid")
-steps_rolling = steps[window - 1 :]  # align: rolling[i] = mean(scores[i:i+window])
+# If fewer data points than the window, no rolling average can be computed
+effective_window = min(window, len(scores))
+rolling = np.convolve(scores, np.ones(effective_window) / effective_window, mode="valid")
+steps_rolling = steps[effective_window - 1 :]  # align: rolling[i] = mean(scores[i:i+window])
 
 # Print data to terminal
 print(f"\nData from {filename} (rolling window = {window})")
@@ -49,7 +51,7 @@ env = name_no_ext.replace("TD3_BC_", "").split("-v")[0] if "TD3_BC_" in name_no_
 
 plt.figure(figsize=(8, 5))
 plt.plot(steps, scores, alpha=0.4, label="Raw score")
-plt.plot(steps_rolling, rolling, linewidth=2, label=f"Rolling avg (window={window})")
+plt.plot(steps_rolling, rolling, linewidth=2, label=f"Rolling avg (window={effective_window})")
 plt.axvline(x=500_000, color="red", linestyle="--", linewidth=1.5, label="Offline → Online")
 plt.xlabel("Step")
 plt.ylabel("D4RL score")

@@ -174,7 +174,7 @@ if __name__ == "__main__":
 
 		# Train policy only once we have enough transitions
 		if replay_buffer.size >= args.batch_size:
-			policy.train(replay_buffer, args.batch_size)
+			policy.train(replay_buffer, args.batch_size, beta=beta)
 
 		state = next_state_norm
 
