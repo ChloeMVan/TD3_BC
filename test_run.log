@@ -1,0 +1,9 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/chloe/TD3_BC/o2o_BC.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/home/chloe/TD3_BC/o2o_BC.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
