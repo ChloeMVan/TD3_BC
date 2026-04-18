@@ -57,8 +57,9 @@ if __name__ == "__main__":
 	# TD3 + BC
 	parser.add_argument("--alpha", default=2.5)
 	parser.add_argument("--normalize", default=True)
-	parser.add_argument("--root_num", type=float)
+	parser.add_argument("--param_num", default=0, type=float)
 	parser.add_argument("--file_tag")
+	parser.add_argument("--function_type")
 	args = parser.parse_args()
 
 	file_name = f"{args.file_tag}_{args.policy}_{args.env}_{args.seed}"
@@ -152,14 +153,21 @@ if __name__ == "__main__":
 	# td3policy.critic_target.load_state_dict(policy.critic_target.state_dict())
 	
     # we use policy instead from offline
-	root_num = args.root_num
+	param_num = args.param_num
+	function_type = args.function_type
 
 	for t in range(total_online_steps):
-		# print((pow(t, 1.0/root_num)), root_num)
-		if root_num > 0:
-			beta = max(0.0, 1.0/(pow(t+1, 1.0/root_num)))  # linear decay from 1 to 0
+		# print((pow(t, 1.0/param_num)), param_num)
+		if function_type == 'exp':
+			beta = max(0.0, 1.0/(pow(t+1, 1.0/param_num)))  # linear decay from 1 to 0
+		elif function_type == "linear":
+			beta = max(0.0, 1.998003996008e-6 * t +1.000001998004)
+		elif function_type == "log":
+			beta = max(0.0,  np.log(500001 - t) / np.log(500001 - 1))
 		else:
-			beta = 0
+			print("functype unrecognized", function_type)
+			print(1/0)
+
 
 		# Select action
 		action = policy.select_action(state)
