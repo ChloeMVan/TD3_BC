@@ -1,3 +1,4 @@
+import copy
 import numpy as np
 import torch
 import gym
@@ -60,6 +61,7 @@ if __name__ == "__main__":
 	parser.add_argument("--param_num", default=0, type=float)
 	parser.add_argument("--file_tag")
 	parser.add_argument("--function_type")
+	parser.add_argument("--plateau_threshold", default=0.5, type=float)  # Min D4RL improvement over window to avoid plateau
 	args = parser.parse_args()
 
 	file_name = f"{args.file_tag}_{args.policy}_{args.env}_{args.seed}"
@@ -114,20 +116,41 @@ if __name__ == "__main__":
 		mean,std = 0,1
 	
 	# ----------------------- offline -----------------------------------
+	# Plateau detection: rolling window of 100k steps worth of evals.
+	# Once the window is full, compare mean of second half vs first half.
+	# If improvement < plateau_threshold, switch to online early.
+	plateau_window_steps = 100_000
+	plateau_window_evals = max(2, plateau_window_steps // int(args.eval_freq))  # number of evals in window
+	half = plateau_window_evals // 2
+
 	print("STARTING OFFLINE TRAINING")
 	evaluations = []
+	offline_steps_taken = 0
 	for t in range(int(args.max_timesteps)):
 		policy.train(replay_buffer, args.batch_size)
+		offline_steps_taken = t + 1
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Offline] Time steps: {t+1}")
 			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std))
 			np.save(f"./results/{file_name}", evaluations)
-			if args.save_model: 
+			if args.save_model:
 				policy.save(f"./models/{file_name}")
+
+			# Check for plateau once we have a full rolling window
+			# if len(evaluations) >= plateau_window_evals:
+			# 	window = evaluations[-plateau_window_evals:]
+			# 	first_half_mean = np.mean(window[:half])
+			# 	second_half_mean = np.mean(window[half:])
+			# 	improvement = second_half_mean - first_half_mean
+			# 	print(f"[Plateau check] Window improvement: {improvement:.3f} (threshold: {args.plateau_threshold})")
+			# 	if improvement < args.plateau_threshold:
+			# 		print(f"[Offline] Plateau detected at step {t+1}, switching to online training early.")
+			# 		break
 	
 	# ------------------------- online ------------------------------------
-	print("STARTING ONLINE TRAINING") 
+	# print(f"STARTING ONLINE TRAINING (offline ran for {offline_steps_taken} / {args.max_timesteps} steps)")
+	print(f"STARTING ONLINE TRAINING")
 
 	kwargs = {
 		"state_dim": state_dim,
@@ -161,7 +184,7 @@ if __name__ == "__main__":
 		if function_type == 'exp':
 			beta = max(0.0, 1.0/(pow(t+1, 1.0/param_num)))  # linear decay from 1 to 0
 		elif function_type == "linear":
-			beta = max(0.0, 1.998003996008e-6 * t +1.000001998004)
+			beta = max(0.0, (-1/249999) * t + (250000/249999))
 		elif function_type == "log":
 			beta = max(0.0,  np.log(500001 - t) / np.log(500001 - 1))
 		else:
