@@ -19,9 +19,2496 @@ pybullet build time: Mar 10 2026 04:43:59
 /home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
   deprecation(
 ---------------------------------------
+Policy: TD3_BC, Env: halfcheetah-medium-v2, Seed: 0
+---------------------------------------
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:03,  5.70it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:03,  4.94it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:04,  3.73it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 14.55it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 10.17it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 10.52it/s]
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+STARTING OFFLINE TRAINING
+[Offline] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 1336.745, D4RL score: 13.024
+---------------------------------------
+[Offline] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 585.686, D4RL score: 6.974
+---------------------------------------
+[Offline] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 4464.271, D4RL score: 38.215
+---------------------------------------
+[Offline] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 5179.543, D4RL score: 43.976
+---------------------------------------
+[Offline] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 5368.043, D4RL score: 45.494
+---------------------------------------
+[Offline] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 5306.461, D4RL score: 44.998
+---------------------------------------
+[Offline] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 5335.949, D4RL score: 45.236
+---------------------------------------
+[Offline] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 5543.806, D4RL score: 46.910
+---------------------------------------
+[Offline] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 5550.624, D4RL score: 46.965
+---------------------------------------
+[Offline] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 5500.222, D4RL score: 46.559
+---------------------------------------
+[Offline] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 5516.675, D4RL score: 46.692
+---------------------------------------
+[Offline] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 5436.614, D4RL score: 46.047
+---------------------------------------
+[Offline] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5523.707, D4RL score: 46.748
+---------------------------------------
+[Offline] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 5475.322, D4RL score: 46.359
+---------------------------------------
+[Offline] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 5474.175, D4RL score: 46.349
+---------------------------------------
+[Offline] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 5436.731, D4RL score: 46.048
+---------------------------------------
+[Offline] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 5465.719, D4RL score: 46.281
+---------------------------------------
+[Offline] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 5526.658, D4RL score: 46.772
+---------------------------------------
+[Offline] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 5453.667, D4RL score: 46.184
+---------------------------------------
+[Offline] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 5577.983, D4RL score: 47.185
+---------------------------------------
+[Offline] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 5424.860, D4RL score: 45.952
+---------------------------------------
+[Offline] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 5569.690, D4RL score: 47.119
+---------------------------------------
+[Offline] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 5538.388, D4RL score: 46.867
+---------------------------------------
+[Offline] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 5531.724, D4RL score: 46.813
+---------------------------------------
+[Offline] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 5518.419, D4RL score: 46.706
+---------------------------------------
+[Offline] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 5588.988, D4RL score: 47.274
+---------------------------------------
+[Offline] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 5600.082, D4RL score: 47.363
+---------------------------------------
+[Offline] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 5646.874, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 5533.456, D4RL score: 46.827
+---------------------------------------
+[Offline] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 5590.924, D4RL score: 47.290
+---------------------------------------
+[Offline] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 5596.747, D4RL score: 47.337
+---------------------------------------
+[Offline] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 5670.161, D4RL score: 47.928
+---------------------------------------
+[Offline] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 5646.883, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 5476.017, D4RL score: 46.364
+---------------------------------------
+[Offline] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 5567.295, D4RL score: 47.099
+---------------------------------------
+[Offline] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 5515.609, D4RL score: 46.683
+---------------------------------------
+[Offline] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 5662.171, D4RL score: 47.864
+---------------------------------------
+[Offline] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 5643.680, D4RL score: 47.715
+---------------------------------------
+[Offline] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 5620.623, D4RL score: 47.529
+---------------------------------------
+[Offline] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 5598.586, D4RL score: 47.351
+---------------------------------------
+[Offline] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 5594.756, D4RL score: 47.321
+---------------------------------------
+[Offline] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 5672.461, D4RL score: 47.946
+---------------------------------------
+[Offline] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 5637.161, D4RL score: 47.662
+---------------------------------------
+[Offline] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 5645.739, D4RL score: 47.731
+---------------------------------------
+[Offline] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 5582.678, D4RL score: 47.223
+---------------------------------------
+[Offline] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 5564.019, D4RL score: 47.073
+---------------------------------------
+[Offline] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 5612.397, D4RL score: 47.463
+---------------------------------------
+[Offline] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 5645.039, D4RL score: 47.726
+---------------------------------------
+[Offline] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 5588.393, D4RL score: 47.269
+---------------------------------------
+[Offline] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 5615.485, D4RL score: 47.488
+---------------------------------------
+[Offline] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 5651.762, D4RL score: 47.780
+---------------------------------------
+[Offline] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 5644.467, D4RL score: 47.721
+---------------------------------------
+[Offline] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 5551.997, D4RL score: 46.976
+---------------------------------------
+[Offline] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 5647.246, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 5692.049, D4RL score: 48.104
+---------------------------------------
+[Offline] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 5719.256, D4RL score: 48.323
+---------------------------------------
+[Offline] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 5644.321, D4RL score: 47.720
+---------------------------------------
+[Offline] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 5605.253, D4RL score: 47.405
+---------------------------------------
+[Offline] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 5621.753, D4RL score: 47.538
+---------------------------------------
+[Offline] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 5525.381, D4RL score: 46.762
+---------------------------------------
+[Offline] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 5545.025, D4RL score: 46.920
+---------------------------------------
+[Offline] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 5666.273, D4RL score: 47.897
+---------------------------------------
+[Offline] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 5544.905, D4RL score: 46.919
+---------------------------------------
+[Offline] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 5562.280, D4RL score: 47.059
+---------------------------------------
+[Offline] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 5678.903, D4RL score: 47.998
+---------------------------------------
+[Offline] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 5654.591, D4RL score: 47.803
+---------------------------------------
+[Offline] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 5547.017, D4RL score: 46.936
+---------------------------------------
+[Offline] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 5678.233, D4RL score: 47.993
+---------------------------------------
+[Offline] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 5670.473, D4RL score: 47.930
+---------------------------------------
+[Offline] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 5620.938, D4RL score: 47.531
+---------------------------------------
+[Offline] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 5626.334, D4RL score: 47.575
+---------------------------------------
+[Offline] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 5632.282, D4RL score: 47.623
+---------------------------------------
+[Offline] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 5647.247, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 5737.801, D4RL score: 48.473
+---------------------------------------
+[Offline] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 5723.225, D4RL score: 48.355
+---------------------------------------
+[Offline] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 5640.924, D4RL score: 47.692
+---------------------------------------
+[Offline] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 5657.999, D4RL score: 47.830
+---------------------------------------
+[Offline] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 5565.544, D4RL score: 47.085
+---------------------------------------
+[Offline] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 5604.104, D4RL score: 47.396
+---------------------------------------
+[Offline] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 5610.175, D4RL score: 47.445
+---------------------------------------
+[Offline] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 5619.735, D4RL score: 47.522
+---------------------------------------
+[Offline] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 5658.505, D4RL score: 47.834
+---------------------------------------
+[Offline] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 5794.439, D4RL score: 48.929
+---------------------------------------
+[Offline] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 5620.998, D4RL score: 47.532
+---------------------------------------
+[Offline] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 5727.498, D4RL score: 48.390
+---------------------------------------
+[Offline] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 5595.640, D4RL score: 47.328
+---------------------------------------
+[Offline] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 5617.411, D4RL score: 47.503
+---------------------------------------
+[Offline] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 5645.627, D4RL score: 47.730
+---------------------------------------
+[Offline] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 5644.946, D4RL score: 47.725
+---------------------------------------
+[Offline] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 5618.625, D4RL score: 47.513
+---------------------------------------
+[Offline] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 5702.306, D4RL score: 48.187
+---------------------------------------
+[Offline] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 5625.504, D4RL score: 47.568
+---------------------------------------
+[Offline] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 5650.373, D4RL score: 47.769
+---------------------------------------
+[Offline] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 5749.795, D4RL score: 48.569
+---------------------------------------
+[Offline] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 5590.173, D4RL score: 47.284
+---------------------------------------
+[Offline] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 5590.734, D4RL score: 47.288
+---------------------------------------
+[Offline] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 5715.505, D4RL score: 48.293
+---------------------------------------
+[Offline] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 5648.473, D4RL score: 47.753
+---------------------------------------
+[Offline] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 5728.869, D4RL score: 48.401
+---------------------------------------
+[Offline] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 5684.199, D4RL score: 48.041
+---------------------------------------
+STARTING ONLINE TRAINING
+[Online] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 7038.795, D4RL score: 58.952
+---------------------------------------
+[Online] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 7200.544, D4RL score: 60.255
+---------------------------------------
+[Online] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 6922.189, D4RL score: 58.013
+---------------------------------------
+[Online] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 7091.896, D4RL score: 59.380
+---------------------------------------
+[Online] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 7026.309, D4RL score: 58.851
+---------------------------------------
+[Online] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 7323.989, D4RL score: 61.249
+---------------------------------------
+[Online] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 7563.677, D4RL score: 63.180
+---------------------------------------
+[Online] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 7853.745, D4RL score: 65.516
+---------------------------------------
+[Online] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 7144.937, D4RL score: 59.807
+---------------------------------------
+[Online] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 7340.777, D4RL score: 61.384
+---------------------------------------
+[Online] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 7568.021, D4RL score: 63.215
+---------------------------------------
+[Online] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 7092.414, D4RL score: 59.384
+---------------------------------------
+[Online] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5692.477, D4RL score: 48.108
+---------------------------------------
+[Online] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 7000.256, D4RL score: 58.641
+---------------------------------------
+[Online] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 7673.099, D4RL score: 64.061
+---------------------------------------
+[Online] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 7869.052, D4RL score: 65.639
+---------------------------------------
+[Online] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 7983.312, D4RL score: 66.560
+---------------------------------------
+[Online] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 7780.882, D4RL score: 64.929
+---------------------------------------
+[Online] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 7824.177, D4RL score: 65.278
+---------------------------------------
+[Online] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 7836.177, D4RL score: 65.374
+---------------------------------------
+[Online] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 7885.947, D4RL score: 65.775
+---------------------------------------
+[Online] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 7917.248, D4RL score: 66.027
+---------------------------------------
+[Online] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 8004.590, D4RL score: 66.731
+---------------------------------------
+[Online] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 7868.993, D4RL score: 65.639
+---------------------------------------
+[Online] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 8098.704, D4RL score: 67.489
+---------------------------------------
+[Online] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 7562.673, D4RL score: 63.171
+---------------------------------------
+[Online] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 7946.477, D4RL score: 66.263
+---------------------------------------
+[Online] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 8209.033, D4RL score: 68.378
+---------------------------------------
+[Online] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 8019.882, D4RL score: 66.854
+---------------------------------------
+[Online] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 8212.478, D4RL score: 68.405
+---------------------------------------
+[Online] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 6935.616, D4RL score: 58.121
+---------------------------------------
+[Online] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 8266.435, D4RL score: 68.840
+---------------------------------------
+[Online] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 8197.951, D4RL score: 68.288
+---------------------------------------
+[Online] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 8266.574, D4RL score: 68.841
+---------------------------------------
+[Online] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 8447.208, D4RL score: 70.296
+---------------------------------------
+[Online] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 8120.374, D4RL score: 67.664
+---------------------------------------
+[Online] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 7382.709, D4RL score: 61.722
+---------------------------------------
+[Online] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 8346.510, D4RL score: 69.485
+---------------------------------------
+[Online] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 7989.034, D4RL score: 66.606
+---------------------------------------
+[Online] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 8589.653, D4RL score: 71.443
+---------------------------------------
+[Online] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 8639.561, D4RL score: 71.845
+---------------------------------------
+[Online] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 8612.356, D4RL score: 71.626
+---------------------------------------
+[Online] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 8477.984, D4RL score: 70.544
+---------------------------------------
+[Online] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 7272.655, D4RL score: 60.835
+---------------------------------------
+[Online] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 8563.144, D4RL score: 71.230
+---------------------------------------
+[Online] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 8236.107, D4RL score: 68.596
+---------------------------------------
+[Online] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 8086.524, D4RL score: 67.391
+---------------------------------------
+[Online] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 8562.035, D4RL score: 71.221
+---------------------------------------
+[Online] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 8619.992, D4RL score: 71.688
+---------------------------------------
+[Online] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 8347.193, D4RL score: 69.491
+---------------------------------------
+[Online] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 8654.254, D4RL score: 71.964
+---------------------------------------
+[Online] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 7544.872, D4RL score: 63.028
+---------------------------------------
+[Online] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 8790.303, D4RL score: 73.060
+---------------------------------------
+[Online] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 8754.982, D4RL score: 72.775
+---------------------------------------
+[Online] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 7780.266, D4RL score: 64.924
+---------------------------------------
+[Online] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 8742.916, D4RL score: 72.678
+---------------------------------------
+[Online] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 8628.077, D4RL score: 71.753
+---------------------------------------
+[Online] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 8731.932, D4RL score: 72.589
+---------------------------------------
+[Online] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 8745.241, D4RL score: 72.697
+---------------------------------------
+[Online] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 8677.635, D4RL score: 72.152
+---------------------------------------
+[Online] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 9017.001, D4RL score: 74.886
+---------------------------------------
+[Online] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 8701.305, D4RL score: 72.343
+---------------------------------------
+[Online] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 8648.655, D4RL score: 71.919
+---------------------------------------
+[Online] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 8943.464, D4RL score: 74.293
+---------------------------------------
+[Online] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 8845.352, D4RL score: 73.503
+---------------------------------------
+[Online] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 8828.707, D4RL score: 73.369
+---------------------------------------
+[Online] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 9210.145, D4RL score: 76.441
+---------------------------------------
+[Online] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 9008.479, D4RL score: 74.817
+---------------------------------------
+[Online] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 8863.579, D4RL score: 73.650
+---------------------------------------
+[Online] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 9004.860, D4RL score: 74.788
+---------------------------------------
+[Online] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 9146.607, D4RL score: 75.930
+---------------------------------------
+[Online] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 9000.052, D4RL score: 74.749
+---------------------------------------
+[Online] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 9191.810, D4RL score: 76.294
+---------------------------------------
+[Online] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 8948.977, D4RL score: 74.338
+---------------------------------------
+[Online] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 9074.659, D4RL score: 75.350
+---------------------------------------
+[Online] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 9185.515, D4RL score: 76.243
+---------------------------------------
+[Online] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 8853.033, D4RL score: 73.565
+---------------------------------------
+[Online] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 9148.301, D4RL score: 75.943
+---------------------------------------
+[Online] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 9037.914, D4RL score: 75.054
+---------------------------------------
+[Online] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 9187.798, D4RL score: 76.261
+---------------------------------------
+[Online] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 9167.900, D4RL score: 76.101
+---------------------------------------
+[Online] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 9114.887, D4RL score: 75.674
+---------------------------------------
+[Online] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 9257.746, D4RL score: 76.825
+---------------------------------------
+[Online] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 9085.799, D4RL score: 75.440
+---------------------------------------
+[Online] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 9057.971, D4RL score: 75.216
+---------------------------------------
+[Online] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 9141.127, D4RL score: 75.885
+---------------------------------------
+[Online] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 9406.681, D4RL score: 78.024
+---------------------------------------
+[Online] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 8956.124, D4RL score: 74.395
+---------------------------------------
+[Online] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 9158.506, D4RL score: 76.025
+---------------------------------------
+[Online] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 8892.220, D4RL score: 73.881
+---------------------------------------
+[Online] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 9543.992, D4RL score: 79.130
+---------------------------------------
+[Online] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 9335.620, D4RL score: 77.452
+---------------------------------------
+[Online] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 9297.647, D4RL score: 77.146
+---------------------------------------
+[Online] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 9358.677, D4RL score: 77.638
+---------------------------------------
+[Online] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 9478.818, D4RL score: 78.605
+---------------------------------------
+[Online] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 9090.795, D4RL score: 75.480
+---------------------------------------
+[Online] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 9527.191, D4RL score: 78.995
+---------------------------------------
+[Online] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 9446.158, D4RL score: 78.342
+---------------------------------------
+[Online] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 9601.174, D4RL score: 79.591
+---------------------------------------
+[Online] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 9323.249, D4RL score: 77.352
+---------------------------------------
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:530: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.15; use exec_module() instead
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Mar 10 2026 04:43:59
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/pybullet_envs/env_bases.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Policy: TD3_BC, Env: halfcheetah-medium-v2, Seed: 0
+---------------------------------------
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:03,  5.70it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:03,  4.90it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:04,  3.74it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 14.58it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 10.17it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 10.52it/s]
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+STARTING OFFLINE TRAINING
+[Offline] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 1336.745, D4RL score: 13.024
+---------------------------------------
+[Offline] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 585.686, D4RL score: 6.974
+---------------------------------------
+[Offline] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 4464.271, D4RL score: 38.215
+---------------------------------------
+[Offline] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 5179.543, D4RL score: 43.976
+---------------------------------------
+[Offline] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 5368.043, D4RL score: 45.494
+---------------------------------------
+[Offline] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 5306.461, D4RL score: 44.998
+---------------------------------------
+[Offline] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 5335.949, D4RL score: 45.236
+---------------------------------------
+[Offline] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 5543.806, D4RL score: 46.910
+---------------------------------------
+[Offline] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 5550.624, D4RL score: 46.965
+---------------------------------------
+[Offline] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 5500.222, D4RL score: 46.559
+---------------------------------------
+[Offline] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 5516.675, D4RL score: 46.692
+---------------------------------------
+[Offline] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 5436.614, D4RL score: 46.047
+---------------------------------------
+[Offline] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5523.707, D4RL score: 46.748
+---------------------------------------
+[Offline] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 5475.322, D4RL score: 46.359
+---------------------------------------
+[Offline] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 5474.175, D4RL score: 46.349
+---------------------------------------
+[Offline] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 5436.731, D4RL score: 46.048
+---------------------------------------
+[Offline] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 5465.719, D4RL score: 46.281
+---------------------------------------
+[Offline] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 5526.658, D4RL score: 46.772
+---------------------------------------
+[Offline] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 5453.667, D4RL score: 46.184
+---------------------------------------
+[Offline] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 5577.983, D4RL score: 47.185
+---------------------------------------
+[Offline] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 5424.860, D4RL score: 45.952
+---------------------------------------
+[Offline] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 5569.690, D4RL score: 47.119
+---------------------------------------
+[Offline] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 5538.388, D4RL score: 46.867
+---------------------------------------
+[Offline] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 5531.724, D4RL score: 46.813
+---------------------------------------
+[Offline] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 5518.419, D4RL score: 46.706
+---------------------------------------
+[Offline] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 5588.988, D4RL score: 47.274
+---------------------------------------
+[Offline] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 5600.082, D4RL score: 47.363
+---------------------------------------
+[Offline] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 5646.874, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 5533.456, D4RL score: 46.827
+---------------------------------------
+[Offline] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 5590.924, D4RL score: 47.290
+---------------------------------------
+[Offline] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 5596.747, D4RL score: 47.337
+---------------------------------------
+[Offline] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 5670.161, D4RL score: 47.928
+---------------------------------------
+[Offline] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 5646.883, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 5476.017, D4RL score: 46.364
+---------------------------------------
+[Offline] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 5567.295, D4RL score: 47.099
+---------------------------------------
+[Offline] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 5515.609, D4RL score: 46.683
+---------------------------------------
+[Offline] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 5662.171, D4RL score: 47.864
+---------------------------------------
+[Offline] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 5643.680, D4RL score: 47.715
+---------------------------------------
+[Offline] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 5620.623, D4RL score: 47.529
+---------------------------------------
+[Offline] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 5598.586, D4RL score: 47.351
+---------------------------------------
+[Offline] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 5594.756, D4RL score: 47.321
+---------------------------------------
+[Offline] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 5672.461, D4RL score: 47.946
+---------------------------------------
+[Offline] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 5637.161, D4RL score: 47.662
+---------------------------------------
+[Offline] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 5645.739, D4RL score: 47.731
+---------------------------------------
+[Offline] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 5582.678, D4RL score: 47.223
+---------------------------------------
+[Offline] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 5564.019, D4RL score: 47.073
+---------------------------------------
+[Offline] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 5612.397, D4RL score: 47.463
+---------------------------------------
+[Offline] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 5645.039, D4RL score: 47.726
+---------------------------------------
+[Offline] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 5588.393, D4RL score: 47.269
+---------------------------------------
+[Offline] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 5615.485, D4RL score: 47.488
+---------------------------------------
+[Offline] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 5651.762, D4RL score: 47.780
+---------------------------------------
+[Offline] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 5644.467, D4RL score: 47.721
+---------------------------------------
+[Offline] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 5551.997, D4RL score: 46.976
+---------------------------------------
+[Offline] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 5647.246, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 5692.049, D4RL score: 48.104
+---------------------------------------
+[Offline] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 5719.256, D4RL score: 48.323
+---------------------------------------
+[Offline] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 5644.321, D4RL score: 47.720
+---------------------------------------
+[Offline] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 5605.253, D4RL score: 47.405
+---------------------------------------
+[Offline] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 5621.753, D4RL score: 47.538
+---------------------------------------
+[Offline] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 5525.381, D4RL score: 46.762
+---------------------------------------
+[Offline] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 5545.025, D4RL score: 46.920
+---------------------------------------
+[Offline] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 5666.273, D4RL score: 47.897
+---------------------------------------
+[Offline] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 5544.905, D4RL score: 46.919
+---------------------------------------
+[Offline] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 5562.280, D4RL score: 47.059
+---------------------------------------
+[Offline] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 5678.903, D4RL score: 47.998
+---------------------------------------
+[Offline] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 5654.591, D4RL score: 47.803
+---------------------------------------
+[Offline] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 5547.017, D4RL score: 46.936
+---------------------------------------
+[Offline] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 5678.233, D4RL score: 47.993
+---------------------------------------
+[Offline] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 5670.473, D4RL score: 47.930
+---------------------------------------
+[Offline] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 5620.938, D4RL score: 47.531
+---------------------------------------
+[Offline] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 5626.334, D4RL score: 47.575
+---------------------------------------
+[Offline] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 5632.282, D4RL score: 47.623
+---------------------------------------
+[Offline] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 5647.247, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 5737.801, D4RL score: 48.473
+---------------------------------------
+[Offline] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 5723.225, D4RL score: 48.355
+---------------------------------------
+[Offline] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 5640.924, D4RL score: 47.692
+---------------------------------------
+[Offline] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 5657.999, D4RL score: 47.830
+---------------------------------------
+[Offline] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 5565.544, D4RL score: 47.085
+---------------------------------------
+[Offline] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 5604.104, D4RL score: 47.396
+---------------------------------------
+[Offline] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 5610.175, D4RL score: 47.445
+---------------------------------------
+[Offline] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 5619.735, D4RL score: 47.522
+---------------------------------------
+[Offline] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 5658.505, D4RL score: 47.834
+---------------------------------------
+[Offline] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 5794.439, D4RL score: 48.929
+---------------------------------------
+[Offline] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 5620.998, D4RL score: 47.532
+---------------------------------------
+[Offline] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 5727.498, D4RL score: 48.390
+---------------------------------------
+[Offline] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 5595.640, D4RL score: 47.328
+---------------------------------------
+[Offline] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 5617.411, D4RL score: 47.503
+---------------------------------------
+[Offline] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 5645.627, D4RL score: 47.730
+---------------------------------------
+[Offline] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 5644.946, D4RL score: 47.725
+---------------------------------------
+[Offline] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 5618.625, D4RL score: 47.513
+---------------------------------------
+[Offline] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 5702.306, D4RL score: 48.187
+---------------------------------------
+[Offline] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 5625.504, D4RL score: 47.568
+---------------------------------------
+[Offline] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 5650.373, D4RL score: 47.769
+---------------------------------------
+[Offline] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 5749.795, D4RL score: 48.569
+---------------------------------------
+[Offline] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 5590.173, D4RL score: 47.284
+---------------------------------------
+[Offline] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 5590.734, D4RL score: 47.288
+---------------------------------------
+[Offline] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 5715.505, D4RL score: 48.293
+---------------------------------------
+[Offline] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 5648.473, D4RL score: 47.753
+---------------------------------------
+[Offline] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 5728.869, D4RL score: 48.401
+---------------------------------------
+[Offline] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 5684.199, D4RL score: 48.041
+---------------------------------------
+STARTING ONLINE TRAINING
+[Online] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 5640.332, D4RL score: 47.688
+---------------------------------------
+[Online] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 5749.353, D4RL score: 48.566
+---------------------------------------
+[Online] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 5697.917, D4RL score: 48.152
+---------------------------------------
+[Online] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 5641.170, D4RL score: 47.694
+---------------------------------------
+[Online] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 5779.315, D4RL score: 48.807
+---------------------------------------
+[Online] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 5683.495, D4RL score: 48.035
+---------------------------------------
+[Online] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 5762.468, D4RL score: 48.671
+---------------------------------------
+[Online] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 5760.882, D4RL score: 48.659
+---------------------------------------
+[Online] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 5781.147, D4RL score: 48.822
+---------------------------------------
+[Online] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 5855.013, D4RL score: 49.417
+---------------------------------------
+[Online] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 5809.243, D4RL score: 49.048
+---------------------------------------
+[Online] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 5798.807, D4RL score: 48.964
+---------------------------------------
+[Online] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5886.420, D4RL score: 49.670
+---------------------------------------
+[Online] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 5926.351, D4RL score: 49.991
+---------------------------------------
+[Online] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 5868.947, D4RL score: 49.529
+---------------------------------------
+[Online] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 5934.651, D4RL score: 50.058
+---------------------------------------
+[Online] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 5816.208, D4RL score: 49.104
+---------------------------------------
+[Online] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 6030.154, D4RL score: 50.828
+---------------------------------------
+[Online] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 6014.180, D4RL score: 50.699
+---------------------------------------
+[Online] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 5953.154, D4RL score: 50.207
+---------------------------------------
+[Online] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 6000.726, D4RL score: 50.591
+---------------------------------------
+[Online] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 6055.653, D4RL score: 51.033
+---------------------------------------
+[Online] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 6043.649, D4RL score: 50.936
+---------------------------------------
+[Online] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 6158.472, D4RL score: 51.861
+---------------------------------------
+[Online] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 6128.221, D4RL score: 51.617
+---------------------------------------
+[Online] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 6147.503, D4RL score: 51.773
+---------------------------------------
+[Online] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 6040.281, D4RL score: 50.909
+---------------------------------------
+[Online] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 6212.849, D4RL score: 52.299
+---------------------------------------
+[Online] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 6359.512, D4RL score: 53.480
+---------------------------------------
+[Online] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 6251.819, D4RL score: 52.613
+---------------------------------------
+[Online] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 6329.849, D4RL score: 53.242
+---------------------------------------
+[Online] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 6298.905, D4RL score: 52.992
+---------------------------------------
+[Online] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 6514.820, D4RL score: 54.731
+---------------------------------------
+[Online] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 6454.057, D4RL score: 54.242
+---------------------------------------
+[Online] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 6468.488, D4RL score: 54.358
+---------------------------------------
+[Online] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 6621.820, D4RL score: 55.593
+---------------------------------------
+[Online] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 6777.502, D4RL score: 56.847
+---------------------------------------
+[Online] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 6799.328, D4RL score: 57.023
+---------------------------------------
+[Online] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 6866.680, D4RL score: 57.565
+---------------------------------------
+[Online] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 6734.633, D4RL score: 56.502
+---------------------------------------
+[Online] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 6996.751, D4RL score: 58.613
+---------------------------------------
+[Online] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 6846.883, D4RL score: 57.406
+---------------------------------------
+[Online] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 6064.858, D4RL score: 51.107
+---------------------------------------
+[Online] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 6568.543, D4RL score: 55.164
+---------------------------------------
+[Online] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 7105.496, D4RL score: 59.489
+---------------------------------------
+[Online] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 7306.827, D4RL score: 61.111
+---------------------------------------
+[Online] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 7446.083, D4RL score: 62.232
+---------------------------------------
+[Online] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 7362.429, D4RL score: 61.559
+---------------------------------------
+[Online] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 7413.706, D4RL score: 61.972
+---------------------------------------
+[Online] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 4530.002, D4RL score: 38.744
+---------------------------------------
+[Online] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 5617.724, D4RL score: 47.506
+---------------------------------------
+[Online] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 7173.068, D4RL score: 60.033
+---------------------------------------
+[Online] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 7244.086, D4RL score: 60.605
+---------------------------------------
+[Online] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 7428.498, D4RL score: 62.091
+---------------------------------------
+[Online] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 7718.905, D4RL score: 64.430
+---------------------------------------
+[Online] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 7444.671, D4RL score: 62.221
+---------------------------------------
+[Online] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 7838.798, D4RL score: 65.396
+---------------------------------------
+[Online] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 7862.966, D4RL score: 65.590
+---------------------------------------
+[Online] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 7588.072, D4RL score: 63.376
+---------------------------------------
+[Online] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 7776.410, D4RL score: 64.893
+---------------------------------------
+[Online] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 6643.119, D4RL score: 55.765
+---------------------------------------
+[Online] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 7739.389, D4RL score: 64.595
+---------------------------------------
+[Online] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 8027.347, D4RL score: 66.914
+---------------------------------------
+[Online] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 7729.256, D4RL score: 64.513
+---------------------------------------
+[Online] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 8185.380, D4RL score: 68.187
+---------------------------------------
+[Online] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 8249.537, D4RL score: 68.704
+---------------------------------------
+[Online] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 8374.683, D4RL score: 69.712
+---------------------------------------
+[Online] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 8194.101, D4RL score: 68.257
+---------------------------------------
+[Online] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 8274.493, D4RL score: 68.905
+---------------------------------------
+[Online] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 8543.251, D4RL score: 71.070
+---------------------------------------
+[Online] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 8219.926, D4RL score: 68.465
+---------------------------------------
+[Online] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 8310.153, D4RL score: 69.192
+---------------------------------------
+[Online] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 8044.784, D4RL score: 67.055
+---------------------------------------
+[Online] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 8015.979, D4RL score: 66.823
+---------------------------------------
+[Online] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 8435.932, D4RL score: 70.205
+---------------------------------------
+[Online] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 8216.438, D4RL score: 68.437
+---------------------------------------
+[Online] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 8412.990, D4RL score: 70.020
+---------------------------------------
+[Online] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 8264.039, D4RL score: 68.821
+---------------------------------------
+[Online] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 8263.397, D4RL score: 68.816
+---------------------------------------
+[Online] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 8319.941, D4RL score: 69.271
+---------------------------------------
+[Online] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 8546.125, D4RL score: 71.093
+---------------------------------------
+[Online] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 8773.450, D4RL score: 72.924
+---------------------------------------
+[Online] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 7951.110, D4RL score: 66.300
+---------------------------------------
+[Online] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 8213.137, D4RL score: 68.411
+---------------------------------------
+[Online] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 8426.841, D4RL score: 70.132
+---------------------------------------
+[Online] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 8756.439, D4RL score: 72.787
+---------------------------------------
+[Online] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 8826.541, D4RL score: 73.352
+---------------------------------------
+[Online] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 8800.380, D4RL score: 73.141
+---------------------------------------
+[Online] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 9147.194, D4RL score: 75.934
+---------------------------------------
+[Online] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 8876.750, D4RL score: 73.756
+---------------------------------------
+[Online] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 8777.514, D4RL score: 72.957
+---------------------------------------
+[Online] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 9094.295, D4RL score: 75.508
+---------------------------------------
+[Online] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 9184.350, D4RL score: 76.234
+---------------------------------------
+[Online] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 8956.211, D4RL score: 74.396
+---------------------------------------
+[Online] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 9084.631, D4RL score: 75.430
+---------------------------------------
+[Online] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 8736.247, D4RL score: 72.624
+---------------------------------------
+[Online] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 8972.104, D4RL score: 74.524
+---------------------------------------
+[Online] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 8733.867, D4RL score: 72.605
+---------------------------------------
+[Online] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 9132.971, D4RL score: 75.820
+---------------------------------------
+[Online] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 9382.226, D4RL score: 77.827
+---------------------------------------
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:530: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.15; use exec_module() instead
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Mar 10 2026 04:43:59
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/pybullet_envs/env_bases.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Policy: TD3_BC, Env: halfcheetah-medium-v2, Seed: 0
+---------------------------------------
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:03,  5.71it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:03,  4.94it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:04,  3.73it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 14.57it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 10.17it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 10.53it/s]
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+STARTING OFFLINE TRAINING
+[Offline] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 1336.745, D4RL score: 13.024
+---------------------------------------
+[Offline] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 585.686, D4RL score: 6.974
+---------------------------------------
+[Offline] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 4464.271, D4RL score: 38.215
+---------------------------------------
+[Offline] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 5179.543, D4RL score: 43.976
+---------------------------------------
+[Offline] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 5368.043, D4RL score: 45.494
+---------------------------------------
+[Offline] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 5306.461, D4RL score: 44.998
+---------------------------------------
+[Offline] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 5335.949, D4RL score: 45.236
+---------------------------------------
+[Offline] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 5543.806, D4RL score: 46.910
+---------------------------------------
+[Offline] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 5550.624, D4RL score: 46.965
+---------------------------------------
+[Offline] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 5500.222, D4RL score: 46.559
+---------------------------------------
+[Offline] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 5516.675, D4RL score: 46.692
+---------------------------------------
+[Offline] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 5436.614, D4RL score: 46.047
+---------------------------------------
+[Offline] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5523.707, D4RL score: 46.748
+---------------------------------------
+[Offline] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 5475.322, D4RL score: 46.359
+---------------------------------------
+[Offline] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 5474.175, D4RL score: 46.349
+---------------------------------------
+[Offline] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 5436.731, D4RL score: 46.048
+---------------------------------------
+[Offline] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 5465.719, D4RL score: 46.281
+---------------------------------------
+[Offline] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 5526.658, D4RL score: 46.772
+---------------------------------------
+[Offline] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 5453.667, D4RL score: 46.184
+---------------------------------------
+[Offline] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 5577.983, D4RL score: 47.185
+---------------------------------------
+[Offline] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 5424.860, D4RL score: 45.952
+---------------------------------------
+[Offline] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 5569.690, D4RL score: 47.119
+---------------------------------------
+[Offline] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 5538.388, D4RL score: 46.867
+---------------------------------------
+[Offline] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 5531.724, D4RL score: 46.813
+---------------------------------------
+[Offline] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 5518.419, D4RL score: 46.706
+---------------------------------------
+[Offline] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 5588.988, D4RL score: 47.274
+---------------------------------------
+[Offline] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 5600.082, D4RL score: 47.363
+---------------------------------------
+[Offline] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 5646.874, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 5533.456, D4RL score: 46.827
+---------------------------------------
+[Offline] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 5590.924, D4RL score: 47.290
+---------------------------------------
+[Offline] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 5596.747, D4RL score: 47.337
+---------------------------------------
+[Offline] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 5670.161, D4RL score: 47.928
+---------------------------------------
+[Offline] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 5646.883, D4RL score: 47.740
+---------------------------------------
+[Offline] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 5476.017, D4RL score: 46.364
+---------------------------------------
+[Offline] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 5567.295, D4RL score: 47.099
+---------------------------------------
+[Offline] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 5515.609, D4RL score: 46.683
+---------------------------------------
+[Offline] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 5662.171, D4RL score: 47.864
+---------------------------------------
+[Offline] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 5643.680, D4RL score: 47.715
+---------------------------------------
+[Offline] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 5620.623, D4RL score: 47.529
+---------------------------------------
+[Offline] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 5598.586, D4RL score: 47.351
+---------------------------------------
+[Offline] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 5594.756, D4RL score: 47.321
+---------------------------------------
+[Offline] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 5672.461, D4RL score: 47.946
+---------------------------------------
+[Offline] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 5637.161, D4RL score: 47.662
+---------------------------------------
+[Offline] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 5645.739, D4RL score: 47.731
+---------------------------------------
+[Offline] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 5582.678, D4RL score: 47.223
+---------------------------------------
+[Offline] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 5564.019, D4RL score: 47.073
+---------------------------------------
+[Offline] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 5612.397, D4RL score: 47.463
+---------------------------------------
+[Offline] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 5645.039, D4RL score: 47.726
+---------------------------------------
+[Offline] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 5588.393, D4RL score: 47.269
+---------------------------------------
+[Offline] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 5615.485, D4RL score: 47.488
+---------------------------------------
+[Offline] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 5651.762, D4RL score: 47.780
+---------------------------------------
+[Offline] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 5644.467, D4RL score: 47.721
+---------------------------------------
+[Offline] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 5551.997, D4RL score: 46.976
+---------------------------------------
+[Offline] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 5647.246, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 5692.049, D4RL score: 48.104
+---------------------------------------
+[Offline] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 5719.256, D4RL score: 48.323
+---------------------------------------
+[Offline] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 5644.321, D4RL score: 47.720
+---------------------------------------
+[Offline] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 5605.253, D4RL score: 47.405
+---------------------------------------
+[Offline] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 5621.753, D4RL score: 47.538
+---------------------------------------
+[Offline] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 5525.381, D4RL score: 46.762
+---------------------------------------
+[Offline] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 5545.025, D4RL score: 46.920
+---------------------------------------
+[Offline] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 5666.273, D4RL score: 47.897
+---------------------------------------
+[Offline] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 5544.905, D4RL score: 46.919
+---------------------------------------
+[Offline] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 5562.280, D4RL score: 47.059
+---------------------------------------
+[Offline] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 5678.903, D4RL score: 47.998
+---------------------------------------
+[Offline] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 5654.591, D4RL score: 47.803
+---------------------------------------
+[Offline] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 5547.017, D4RL score: 46.936
+---------------------------------------
+[Offline] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 5678.233, D4RL score: 47.993
+---------------------------------------
+[Offline] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 5670.473, D4RL score: 47.930
+---------------------------------------
+[Offline] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 5620.938, D4RL score: 47.531
+---------------------------------------
+[Offline] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 5626.334, D4RL score: 47.575
+---------------------------------------
+[Offline] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 5632.282, D4RL score: 47.623
+---------------------------------------
+[Offline] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 5647.247, D4RL score: 47.743
+---------------------------------------
+[Offline] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 5737.801, D4RL score: 48.473
+---------------------------------------
+[Offline] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 5723.225, D4RL score: 48.355
+---------------------------------------
+[Offline] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 5640.924, D4RL score: 47.692
+---------------------------------------
+[Offline] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 5657.999, D4RL score: 47.830
+---------------------------------------
+[Offline] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 5565.544, D4RL score: 47.085
+---------------------------------------
+[Offline] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 5604.104, D4RL score: 47.396
+---------------------------------------
+[Offline] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 5610.175, D4RL score: 47.445
+---------------------------------------
+[Offline] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 5619.735, D4RL score: 47.522
+---------------------------------------
+[Offline] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 5658.505, D4RL score: 47.834
+---------------------------------------
+[Offline] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 5794.439, D4RL score: 48.929
+---------------------------------------
+[Offline] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 5620.998, D4RL score: 47.532
+---------------------------------------
+[Offline] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 5727.498, D4RL score: 48.390
+---------------------------------------
+[Offline] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 5595.640, D4RL score: 47.328
+---------------------------------------
+[Offline] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 5617.411, D4RL score: 47.503
+---------------------------------------
+[Offline] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 5645.627, D4RL score: 47.730
+---------------------------------------
+[Offline] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 5644.946, D4RL score: 47.725
+---------------------------------------
+[Offline] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 5618.625, D4RL score: 47.513
+---------------------------------------
+[Offline] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 5702.306, D4RL score: 48.187
+---------------------------------------
+[Offline] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 5625.504, D4RL score: 47.568
+---------------------------------------
+[Offline] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 5650.373, D4RL score: 47.769
+---------------------------------------
+[Offline] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 5749.795, D4RL score: 48.569
+---------------------------------------
+[Offline] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 5590.173, D4RL score: 47.284
+---------------------------------------
+[Offline] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 5590.734, D4RL score: 47.288
+---------------------------------------
+[Offline] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 5715.505, D4RL score: 48.293
+---------------------------------------
+[Offline] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 5648.473, D4RL score: 47.753
+---------------------------------------
+[Offline] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 5728.869, D4RL score: 48.401
+---------------------------------------
+[Offline] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 5684.199, D4RL score: 48.041
+---------------------------------------
+STARTING ONLINE TRAINING
+[Online] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 5709.712, D4RL score: 48.247
+---------------------------------------
+[Online] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 5678.087, D4RL score: 47.992
+---------------------------------------
+[Online] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 5676.877, D4RL score: 47.982
+---------------------------------------
+[Online] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 5643.106, D4RL score: 47.710
+---------------------------------------
+[Online] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 5612.978, D4RL score: 47.467
+---------------------------------------
+[Online] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 5738.694, D4RL score: 48.480
+---------------------------------------
+[Online] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 5660.452, D4RL score: 47.850
+---------------------------------------
+[Online] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 5597.180, D4RL score: 47.340
+---------------------------------------
+[Online] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 5799.274, D4RL score: 48.968
+---------------------------------------
+[Online] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 5703.029, D4RL score: 48.193
+---------------------------------------
+[Online] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 5646.133, D4RL score: 47.734
+---------------------------------------
+[Online] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 5799.173, D4RL score: 48.967
+---------------------------------------
+[Online] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 5715.179, D4RL score: 48.291
+---------------------------------------
+[Online] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 5666.927, D4RL score: 47.902
+---------------------------------------
+[Online] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 5821.596, D4RL score: 49.148
+---------------------------------------
+[Online] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 5723.150, D4RL score: 48.355
+---------------------------------------
+[Online] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 5707.624, D4RL score: 48.230
+---------------------------------------
+[Online] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 5708.962, D4RL score: 48.240
+---------------------------------------
+[Online] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 5735.672, D4RL score: 48.456
+---------------------------------------
+[Online] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 5787.104, D4RL score: 48.870
+---------------------------------------
+[Online] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 5774.896, D4RL score: 48.772
+---------------------------------------
+[Online] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 5770.175, D4RL score: 48.734
+---------------------------------------
+[Online] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 5787.937, D4RL score: 48.877
+---------------------------------------
+[Online] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 5809.620, D4RL score: 49.051
+---------------------------------------
+[Online] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 5868.597, D4RL score: 49.526
+---------------------------------------
+[Online] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 5926.396, D4RL score: 49.992
+---------------------------------------
+[Online] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 5679.676, D4RL score: 48.005
+---------------------------------------
+[Online] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 5784.344, D4RL score: 48.848
+---------------------------------------
+[Online] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 5769.296, D4RL score: 48.726
+---------------------------------------
+[Online] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 5877.847, D4RL score: 49.601
+---------------------------------------
+[Online] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 5825.079, D4RL score: 49.176
+---------------------------------------
+[Online] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 5805.579, D4RL score: 49.019
+---------------------------------------
+[Online] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 5803.034, D4RL score: 48.998
+---------------------------------------
+[Online] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 5825.215, D4RL score: 49.177
+---------------------------------------
+[Online] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 5793.706, D4RL score: 48.923
+---------------------------------------
+[Online] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 5885.942, D4RL score: 49.666
+---------------------------------------
+[Online] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 5892.487, D4RL score: 49.719
+---------------------------------------
+[Online] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 5884.967, D4RL score: 49.658
+---------------------------------------
+[Online] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 5985.860, D4RL score: 50.471
+---------------------------------------
+[Online] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 5844.037, D4RL score: 49.328
+---------------------------------------
+[Online] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 5851.008, D4RL score: 49.385
+---------------------------------------
+[Online] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 5854.049, D4RL score: 49.409
+---------------------------------------
+[Online] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 5908.083, D4RL score: 49.844
+---------------------------------------
+[Online] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 5946.905, D4RL score: 50.157
+---------------------------------------
+[Online] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 5978.210, D4RL score: 50.409
+---------------------------------------
+[Online] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 5964.684, D4RL score: 50.300
+---------------------------------------
+[Online] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 5874.601, D4RL score: 49.575
+---------------------------------------
+[Online] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 5885.417, D4RL score: 49.662
+---------------------------------------
+[Online] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 5918.621, D4RL score: 49.929
+---------------------------------------
+[Online] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 5965.412, D4RL score: 50.306
+---------------------------------------
+[Online] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 5963.479, D4RL score: 50.291
+---------------------------------------
+[Online] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 6015.720, D4RL score: 50.711
+---------------------------------------
+[Online] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 5938.026, D4RL score: 50.086
+---------------------------------------
+[Online] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 5901.377, D4RL score: 49.790
+---------------------------------------
+[Online] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 5997.600, D4RL score: 50.565
+---------------------------------------
+[Online] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 5958.387, D4RL score: 50.250
+---------------------------------------
+[Online] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 6050.174, D4RL score: 50.989
+---------------------------------------
+[Online] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 6056.399, D4RL score: 51.039
+---------------------------------------
+[Online] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 5948.049, D4RL score: 50.166
+---------------------------------------
+[Online] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 6099.169, D4RL score: 51.383
+---------------------------------------
+[Online] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 6064.876, D4RL score: 51.107
+---------------------------------------
+[Online] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 6061.821, D4RL score: 51.083
+---------------------------------------
+[Online] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 6063.655, D4RL score: 51.097
+---------------------------------------
+[Online] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 6046.075, D4RL score: 50.956
+---------------------------------------
+[Online] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 6108.839, D4RL score: 51.461
+---------------------------------------
+[Online] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 6255.255, D4RL score: 52.641
+---------------------------------------
+[Online] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 6235.569, D4RL score: 52.482
+---------------------------------------
+[Online] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 6205.149, D4RL score: 52.237
+---------------------------------------
+[Online] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 6128.506, D4RL score: 51.620
+---------------------------------------
+[Online] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 6048.536, D4RL score: 50.976
+---------------------------------------
+[Online] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 6070.020, D4RL score: 51.149
+---------------------------------------
+[Online] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 6208.549, D4RL score: 52.264
+---------------------------------------
+[Online] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 6106.960, D4RL score: 51.446
+---------------------------------------
+[Online] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 6147.669, D4RL score: 51.774
+---------------------------------------
+[Online] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 6284.992, D4RL score: 52.880
+---------------------------------------
+[Online] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 6233.591, D4RL score: 52.466
+---------------------------------------
+[Online] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 6175.076, D4RL score: 51.995
+---------------------------------------
+[Online] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 6307.997, D4RL score: 53.065
+---------------------------------------
+[Online] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 6290.147, D4RL score: 52.922
+---------------------------------------
+[Online] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 6293.843, D4RL score: 52.951
+---------------------------------------
+[Online] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 6321.067, D4RL score: 53.171
+---------------------------------------
+[Online] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 6322.311, D4RL score: 53.181
+---------------------------------------
+[Online] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 6389.045, D4RL score: 53.718
+---------------------------------------
+[Online] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 6267.002, D4RL score: 52.735
+---------------------------------------
+[Online] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 6275.661, D4RL score: 52.805
+---------------------------------------
+[Online] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 6259.517, D4RL score: 52.675
+---------------------------------------
+[Online] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 6429.872, D4RL score: 54.047
+---------------------------------------
+[Online] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 6343.989, D4RL score: 53.355
+---------------------------------------
+[Online] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 6401.674, D4RL score: 53.820
+---------------------------------------
+[Online] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 6284.747, D4RL score: 52.878
+---------------------------------------
+[Online] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 6594.967, D4RL score: 55.377
+---------------------------------------
+[Online] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 6400.702, D4RL score: 53.812
+---------------------------------------
+[Online] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 6629.690, D4RL score: 55.657
+---------------------------------------
+[Online] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 6485.890, D4RL score: 54.498
+---------------------------------------
+[Online] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 6460.872, D4RL score: 54.297
+---------------------------------------
+[Online] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 6363.069, D4RL score: 53.509
+---------------------------------------
+[Online] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 6629.555, D4RL score: 55.656
+---------------------------------------
+[Online] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 6509.578, D4RL score: 54.689
+---------------------------------------
+[Online] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 6674.081, D4RL score: 56.014
+---------------------------------------
+[Online] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 6763.760, D4RL score: 56.737
+---------------------------------------
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:530: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.15; use exec_module() instead
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Mar 10 2026 04:43:59
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/pybullet_envs/env_bases.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
 Policy: TD3_BC, Env: halfcheetah-expert-v2, Seed: 0
 ---------------------------------------
-load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:03,  5.90it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:03,  5.00it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:04,  3.76it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 14.70it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 10.26it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 10.62it/s]
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:03,  5.90it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:03,  4.96it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:04,  3.76it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 14.67it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 10.22it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 10.59it/s]
 /home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
   logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
 /home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
@@ -430,401 +2917,401 @@ Evaluation over 5 episodes: 11773.545, D4RL score: 97.089
 STARTING ONLINE TRAINING
 [Online] Time steps: 5000
 ---------------------------------------
-Evaluation over 5 episodes: 11653.004, D4RL score: 96.118
+Evaluation over 5 episodes: 11615.824, D4RL score: 95.818
 ---------------------------------------
 [Online] Time steps: 10000
 ---------------------------------------
-Evaluation over 5 episodes: 11685.316, D4RL score: 96.378
+Evaluation over 5 episodes: 11724.615, D4RL score: 96.694
 ---------------------------------------
 [Online] Time steps: 15000
 ---------------------------------------
-Evaluation over 5 episodes: 11545.904, D4RL score: 95.255
+Evaluation over 5 episodes: 11483.111, D4RL score: 94.749
 ---------------------------------------
 [Online] Time steps: 20000
 ---------------------------------------
-Evaluation over 5 episodes: 11653.664, D4RL score: 96.123
+Evaluation over 5 episodes: 11717.150, D4RL score: 96.634
 ---------------------------------------
 [Online] Time steps: 25000
 ---------------------------------------
-Evaluation over 5 episodes: 11605.884, D4RL score: 95.738
+Evaluation over 5 episodes: 11743.340, D4RL score: 96.845
 ---------------------------------------
 [Online] Time steps: 30000
 ---------------------------------------
-Evaluation over 5 episodes: 11643.716, D4RL score: 96.043
+Evaluation over 5 episodes: 11637.037, D4RL score: 95.989
 ---------------------------------------
 [Online] Time steps: 35000
 ---------------------------------------
-Evaluation over 5 episodes: 11688.757, D4RL score: 96.406
+Evaluation over 5 episodes: 11686.272, D4RL score: 96.386
 ---------------------------------------
 [Online] Time steps: 40000
 ---------------------------------------
-Evaluation over 5 episodes: 11645.733, D4RL score: 96.059
+Evaluation over 5 episodes: 11650.514, D4RL score: 96.098
 ---------------------------------------
 [Online] Time steps: 45000
 ---------------------------------------
-Evaluation over 5 episodes: 11518.772, D4RL score: 95.036
+Evaluation over 5 episodes: 11756.224, D4RL score: 96.949
 ---------------------------------------
 [Online] Time steps: 50000
 ---------------------------------------
-Evaluation over 5 episodes: 11656.222, D4RL score: 96.144
+Evaluation over 5 episodes: 11732.318, D4RL score: 96.757
 ---------------------------------------
 [Online] Time steps: 55000
 ---------------------------------------
-Evaluation over 5 episodes: 11645.286, D4RL score: 96.056
+Evaluation over 5 episodes: 11692.006, D4RL score: 96.432
 ---------------------------------------
 [Online] Time steps: 60000
 ---------------------------------------
-Evaluation over 5 episodes: 11661.633, D4RL score: 96.187
+Evaluation over 5 episodes: 10197.827, D4RL score: 84.397
 ---------------------------------------
 [Online] Time steps: 65000
 ---------------------------------------
-Evaluation over 5 episodes: 11487.531, D4RL score: 94.785
+Evaluation over 5 episodes: 11819.642, D4RL score: 97.460
 ---------------------------------------
 [Online] Time steps: 70000
 ---------------------------------------
-Evaluation over 5 episodes: 11470.001, D4RL score: 94.644
+Evaluation over 5 episodes: 11651.392, D4RL score: 96.105
 ---------------------------------------
 [Online] Time steps: 75000
 ---------------------------------------
-Evaluation over 5 episodes: 11238.840, D4RL score: 92.782
+Evaluation over 5 episodes: 11559.232, D4RL score: 95.362
 ---------------------------------------
 [Online] Time steps: 80000
 ---------------------------------------
-Evaluation over 5 episodes: 11525.688, D4RL score: 95.092
+Evaluation over 5 episodes: 11617.440, D4RL score: 95.831
 ---------------------------------------
 [Online] Time steps: 85000
 ---------------------------------------
-Evaluation over 5 episodes: 11726.997, D4RL score: 96.714
+Evaluation over 5 episodes: 11672.782, D4RL score: 96.277
 ---------------------------------------
 [Online] Time steps: 90000
 ---------------------------------------
-Evaluation over 5 episodes: 11642.761, D4RL score: 96.035
+Evaluation over 5 episodes: 11787.237, D4RL score: 97.199
 ---------------------------------------
 [Online] Time steps: 95000
 ---------------------------------------
-Evaluation over 5 episodes: 11316.617, D4RL score: 93.408
+Evaluation over 5 episodes: 9891.706, D4RL score: 81.931
 ---------------------------------------
 [Online] Time steps: 100000
 ---------------------------------------
-Evaluation over 5 episodes: 11300.087, D4RL score: 93.275
+Evaluation over 5 episodes: 11450.409, D4RL score: 94.486
 ---------------------------------------
 [Online] Time steps: 105000
 ---------------------------------------
-Evaluation over 5 episodes: 11455.766, D4RL score: 94.529
+Evaluation over 5 episodes: 11682.073, D4RL score: 96.352
 ---------------------------------------
 [Online] Time steps: 110000
 ---------------------------------------
-Evaluation over 5 episodes: 11679.848, D4RL score: 96.334
+Evaluation over 5 episodes: 11643.245, D4RL score: 96.039
 ---------------------------------------
 [Online] Time steps: 115000
 ---------------------------------------
-Evaluation over 5 episodes: 11613.782, D4RL score: 95.802
+Evaluation over 5 episodes: 11479.520, D4RL score: 94.720
 ---------------------------------------
 [Online] Time steps: 120000
 ---------------------------------------
-Evaluation over 5 episodes: 11873.319, D4RL score: 97.892
+Evaluation over 5 episodes: 11644.723, D4RL score: 96.051
 ---------------------------------------
 [Online] Time steps: 125000
 ---------------------------------------
-Evaluation over 5 episodes: 11485.498, D4RL score: 94.768
+Evaluation over 5 episodes: 11679.366, D4RL score: 96.330
 ---------------------------------------
 [Online] Time steps: 130000
 ---------------------------------------
-Evaluation over 5 episodes: 11528.305, D4RL score: 95.113
+Evaluation over 5 episodes: 11383.099, D4RL score: 93.944
 ---------------------------------------
 [Online] Time steps: 135000
 ---------------------------------------
-Evaluation over 5 episodes: 11733.026, D4RL score: 96.762
+Evaluation over 5 episodes: 11525.053, D4RL score: 95.087
 ---------------------------------------
 [Online] Time steps: 140000
 ---------------------------------------
-Evaluation over 5 episodes: 11490.696, D4RL score: 94.810
+Evaluation over 5 episodes: 11675.708, D4RL score: 96.301
 ---------------------------------------
 [Online] Time steps: 145000
 ---------------------------------------
-Evaluation over 5 episodes: 11666.531, D4RL score: 96.227
+Evaluation over 5 episodes: 11735.471, D4RL score: 96.782
 ---------------------------------------
 [Online] Time steps: 150000
 ---------------------------------------
-Evaluation over 5 episodes: 11312.475, D4RL score: 93.375
+Evaluation over 5 episodes: 11566.953, D4RL score: 95.425
 ---------------------------------------
 [Online] Time steps: 155000
 ---------------------------------------
-Evaluation over 5 episodes: 11436.721, D4RL score: 94.376
+Evaluation over 5 episodes: 11533.435, D4RL score: 95.155
 ---------------------------------------
 [Online] Time steps: 160000
 ---------------------------------------
-Evaluation over 5 episodes: 11481.263, D4RL score: 94.734
+Evaluation over 5 episodes: 10838.187, D4RL score: 89.555
 ---------------------------------------
 [Online] Time steps: 165000
 ---------------------------------------
-Evaluation over 5 episodes: 11580.900, D4RL score: 95.537
+Evaluation over 5 episodes: 11423.191, D4RL score: 94.267
 ---------------------------------------
 [Online] Time steps: 170000
 ---------------------------------------
-Evaluation over 5 episodes: 11499.486, D4RL score: 94.881
+Evaluation over 5 episodes: 11208.561, D4RL score: 92.538
 ---------------------------------------
 [Online] Time steps: 175000
 ---------------------------------------
-Evaluation over 5 episodes: 11717.891, D4RL score: 96.640
+Evaluation over 5 episodes: 11579.085, D4RL score: 95.522
 ---------------------------------------
 [Online] Time steps: 180000
 ---------------------------------------
-Evaluation over 5 episodes: 11205.277, D4RL score: 92.511
+Evaluation over 5 episodes: 11496.941, D4RL score: 94.861
 ---------------------------------------
 [Online] Time steps: 185000
 ---------------------------------------
-Evaluation over 5 episodes: 11527.770, D4RL score: 95.109
+Evaluation over 5 episodes: 11678.502, D4RL score: 96.323
 ---------------------------------------
 [Online] Time steps: 190000
 ---------------------------------------
-Evaluation over 5 episodes: 11379.159, D4RL score: 93.912
+Evaluation over 5 episodes: 11255.490, D4RL score: 92.916
 ---------------------------------------
 [Online] Time steps: 195000
 ---------------------------------------
-Evaluation over 5 episodes: 11451.489, D4RL score: 94.495
+Evaluation over 5 episodes: 11124.245, D4RL score: 91.859
 ---------------------------------------
 [Online] Time steps: 200000
 ---------------------------------------
-Evaluation over 5 episodes: 11431.227, D4RL score: 94.331
+Evaluation over 5 episodes: 10970.195, D4RL score: 90.618
 ---------------------------------------
 [Online] Time steps: 205000
 ---------------------------------------
-Evaluation over 5 episodes: 11617.211, D4RL score: 95.829
+Evaluation over 5 episodes: 9468.067, D4RL score: 78.519
 ---------------------------------------
 [Online] Time steps: 210000
 ---------------------------------------
-Evaluation over 5 episodes: 11631.486, D4RL score: 95.944
+Evaluation over 5 episodes: 9297.191, D4RL score: 77.142
 ---------------------------------------
 [Online] Time steps: 215000
 ---------------------------------------
-Evaluation over 5 episodes: 11519.834, D4RL score: 95.045
+Evaluation over 5 episodes: 10432.381, D4RL score: 86.286
 ---------------------------------------
 [Online] Time steps: 220000
 ---------------------------------------
-Evaluation over 5 episodes: 11620.183, D4RL score: 95.853
+Evaluation over 5 episodes: 8229.595, D4RL score: 68.543
 ---------------------------------------
 [Online] Time steps: 225000
 ---------------------------------------
-Evaluation over 5 episodes: 11722.135, D4RL score: 96.675
+Evaluation over 5 episodes: 3993.689, D4RL score: 34.425
 ---------------------------------------
 [Online] Time steps: 230000
 ---------------------------------------
-Evaluation over 5 episodes: 11697.445, D4RL score: 96.476
+Evaluation over 5 episodes: 7462.239, D4RL score: 62.363
 ---------------------------------------
 [Online] Time steps: 235000
 ---------------------------------------
-Evaluation over 5 episodes: 10253.205, D4RL score: 84.843
+Evaluation over 5 episodes: 5241.574, D4RL score: 44.476
 ---------------------------------------
 [Online] Time steps: 240000
 ---------------------------------------
-Evaluation over 5 episodes: 11388.977, D4RL score: 93.991
+Evaluation over 5 episodes: 5520.550, D4RL score: 46.723
 ---------------------------------------
 [Online] Time steps: 245000
 ---------------------------------------
-Evaluation over 5 episodes: 11560.890, D4RL score: 95.376
+Evaluation over 5 episodes: 2275.108, D4RL score: 20.582
 ---------------------------------------
 [Online] Time steps: 250000
 ---------------------------------------
-Evaluation over 5 episodes: 11783.740, D4RL score: 97.171
+Evaluation over 5 episodes: 596.813, D4RL score: 7.064
 ---------------------------------------
 [Online] Time steps: 255000
 ---------------------------------------
-Evaluation over 5 episodes: 11586.019, D4RL score: 95.578
+Evaluation over 5 episodes: -83.326, D4RL score: 1.586
 ---------------------------------------
 [Online] Time steps: 260000
 ---------------------------------------
-Evaluation over 5 episodes: 11534.671, D4RL score: 95.165
+Evaluation over 5 episodes: 381.206, D4RL score: 5.327
 ---------------------------------------
 [Online] Time steps: 265000
 ---------------------------------------
-Evaluation over 5 episodes: 11594.601, D4RL score: 95.647
+Evaluation over 5 episodes: 1258.209, D4RL score: 12.391
 ---------------------------------------
 [Online] Time steps: 270000
 ---------------------------------------
-Evaluation over 5 episodes: 11495.989, D4RL score: 94.853
+Evaluation over 5 episodes: 1399.482, D4RL score: 13.529
 ---------------------------------------
 [Online] Time steps: 275000
 ---------------------------------------
-Evaluation over 5 episodes: 11308.372, D4RL score: 93.342
+Evaluation over 5 episodes: 1526.248, D4RL score: 14.550
 ---------------------------------------
 [Online] Time steps: 280000
 ---------------------------------------
-Evaluation over 5 episodes: 11578.534, D4RL score: 95.518
+Evaluation over 5 episodes: 2100.729, D4RL score: 19.177
 ---------------------------------------
 [Online] Time steps: 285000
 ---------------------------------------
-Evaluation over 5 episodes: 11716.362, D4RL score: 96.628
+Evaluation over 5 episodes: 4500.700, D4RL score: 38.508
 ---------------------------------------
 [Online] Time steps: 290000
 ---------------------------------------
-Evaluation over 5 episodes: 11580.722, D4RL score: 95.535
+Evaluation over 5 episodes: 5655.523, D4RL score: 47.810
 ---------------------------------------
 [Online] Time steps: 295000
 ---------------------------------------
-Evaluation over 5 episodes: 11464.202, D4RL score: 94.597
+Evaluation over 5 episodes: 5938.252, D4RL score: 50.087
 ---------------------------------------
 [Online] Time steps: 300000
 ---------------------------------------
-Evaluation over 5 episodes: 11415.053, D4RL score: 94.201
+Evaluation over 5 episodes: 6832.892, D4RL score: 57.293
 ---------------------------------------
 [Online] Time steps: 305000
 ---------------------------------------
-Evaluation over 5 episodes: 11630.830, D4RL score: 95.939
+Evaluation over 5 episodes: 6997.805, D4RL score: 58.622
 ---------------------------------------
 [Online] Time steps: 310000
 ---------------------------------------
-Evaluation over 5 episodes: 11541.780, D4RL score: 95.222
+Evaluation over 5 episodes: 7133.663, D4RL score: 59.716
 ---------------------------------------
 [Online] Time steps: 315000
 ---------------------------------------
-Evaluation over 5 episodes: 11586.447, D4RL score: 95.582
+Evaluation over 5 episodes: 6833.614, D4RL score: 57.299
 ---------------------------------------
 [Online] Time steps: 320000
 ---------------------------------------
-Evaluation over 5 episodes: 11763.729, D4RL score: 97.010
+Evaluation over 5 episodes: 7873.494, D4RL score: 65.675
 ---------------------------------------
 [Online] Time steps: 325000
 ---------------------------------------
-Evaluation over 5 episodes: 11643.832, D4RL score: 96.044
+Evaluation over 5 episodes: 6391.981, D4RL score: 53.742
 ---------------------------------------
 [Online] Time steps: 330000
 ---------------------------------------
-Evaluation over 5 episodes: 11462.331, D4RL score: 94.582
+Evaluation over 5 episodes: 7607.562, D4RL score: 63.533
 ---------------------------------------
 [Online] Time steps: 335000
 ---------------------------------------
-Evaluation over 5 episodes: 11482.021, D4RL score: 94.740
+Evaluation over 5 episodes: 8092.964, D4RL score: 67.443
 ---------------------------------------
 [Online] Time steps: 340000
 ---------------------------------------
-Evaluation over 5 episodes: 11489.014, D4RL score: 94.797
+Evaluation over 5 episodes: 7414.802, D4RL score: 61.980
 ---------------------------------------
 [Online] Time steps: 345000
 ---------------------------------------
-Evaluation over 5 episodes: 11475.744, D4RL score: 94.690
+Evaluation over 5 episodes: 7140.268, D4RL score: 59.769
 ---------------------------------------
 [Online] Time steps: 350000
 ---------------------------------------
-Evaluation over 5 episodes: 11558.482, D4RL score: 95.356
+Evaluation over 5 episodes: 6342.148, D4RL score: 53.341
 ---------------------------------------
 [Online] Time steps: 355000
 ---------------------------------------
-Evaluation over 5 episodes: 11363.637, D4RL score: 93.787
+Evaluation over 5 episodes: 7661.672, D4RL score: 63.969
 ---------------------------------------
 [Online] Time steps: 360000
 ---------------------------------------
-Evaluation over 5 episodes: 11573.713, D4RL score: 95.479
+Evaluation over 5 episodes: 9022.739, D4RL score: 74.932
 ---------------------------------------
 [Online] Time steps: 365000
 ---------------------------------------
-Evaluation over 5 episodes: 11577.787, D4RL score: 95.512
+Evaluation over 5 episodes: 7008.824, D4RL score: 58.710
 ---------------------------------------
 [Online] Time steps: 370000
 ---------------------------------------
-Evaluation over 5 episodes: 11606.228, D4RL score: 95.741
+Evaluation over 5 episodes: 6954.275, D4RL score: 58.271
 ---------------------------------------
 [Online] Time steps: 375000
 ---------------------------------------
-Evaluation over 5 episodes: 11579.593, D4RL score: 95.526
+Evaluation over 5 episodes: 8957.248, D4RL score: 74.404
 ---------------------------------------
 [Online] Time steps: 380000
 ---------------------------------------
-Evaluation over 5 episodes: 11549.077, D4RL score: 95.281
+Evaluation over 5 episodes: 9446.018, D4RL score: 78.341
 ---------------------------------------
 [Online] Time steps: 385000
 ---------------------------------------
-Evaluation over 5 episodes: 11733.069, D4RL score: 96.763
+Evaluation over 5 episodes: 9186.876, D4RL score: 76.254
 ---------------------------------------
 [Online] Time steps: 390000
 ---------------------------------------
-Evaluation over 5 episodes: 11643.956, D4RL score: 96.045
+Evaluation over 5 episodes: 8760.023, D4RL score: 72.816
 ---------------------------------------
 [Online] Time steps: 395000
 ---------------------------------------
-Evaluation over 5 episodes: 11538.056, D4RL score: 95.192
+Evaluation over 5 episodes: 9727.918, D4RL score: 80.612
 ---------------------------------------
 [Online] Time steps: 400000
 ---------------------------------------
-Evaluation over 5 episodes: 11423.845, D4RL score: 94.272
+Evaluation over 5 episodes: 9299.773, D4RL score: 77.163
 ---------------------------------------
 [Online] Time steps: 405000
 ---------------------------------------
-Evaluation over 5 episodes: 11549.182, D4RL score: 95.281
+Evaluation over 5 episodes: 8927.816, D4RL score: 74.167
 ---------------------------------------
 [Online] Time steps: 410000
 ---------------------------------------
-Evaluation over 5 episodes: 11549.249, D4RL score: 95.282
+Evaluation over 5 episodes: 10087.707, D4RL score: 83.510
 ---------------------------------------
 [Online] Time steps: 415000
 ---------------------------------------
-Evaluation over 5 episodes: 11539.784, D4RL score: 95.206
+Evaluation over 5 episodes: 8370.738, D4RL score: 69.680
 ---------------------------------------
 [Online] Time steps: 420000
 ---------------------------------------
-Evaluation over 5 episodes: 11376.084, D4RL score: 93.887
+Evaluation over 5 episodes: 10176.641, D4RL score: 84.226
 ---------------------------------------
 [Online] Time steps: 425000
 ---------------------------------------
-Evaluation over 5 episodes: 11448.384, D4RL score: 94.470
+Evaluation over 5 episodes: 10446.642, D4RL score: 86.401
 ---------------------------------------
 [Online] Time steps: 430000
 ---------------------------------------
-Evaluation over 5 episodes: 11536.518, D4RL score: 95.179
+Evaluation over 5 episodes: 10532.547, D4RL score: 87.093
 ---------------------------------------
 [Online] Time steps: 435000
 ---------------------------------------
-Evaluation over 5 episodes: 11640.722, D4RL score: 96.019
+Evaluation over 5 episodes: 10363.830, D4RL score: 85.734
 ---------------------------------------
 [Online] Time steps: 440000
 ---------------------------------------
-Evaluation over 5 episodes: 11542.593, D4RL score: 95.228
+Evaluation over 5 episodes: 8706.079, D4RL score: 72.381
 ---------------------------------------
 [Online] Time steps: 445000
 ---------------------------------------
-Evaluation over 5 episodes: 11530.825, D4RL score: 95.134
+Evaluation over 5 episodes: 10525.243, D4RL score: 87.034
 ---------------------------------------
 [Online] Time steps: 450000
 ---------------------------------------
-Evaluation over 5 episodes: 11466.148, D4RL score: 94.613
+Evaluation over 5 episodes: 10492.167, D4RL score: 86.768
 ---------------------------------------
 [Online] Time steps: 455000
 ---------------------------------------
-Evaluation over 5 episodes: 11681.587, D4RL score: 96.348
+Evaluation over 5 episodes: 10902.897, D4RL score: 90.076
 ---------------------------------------
 [Online] Time steps: 460000
 ---------------------------------------
-Evaluation over 5 episodes: 11623.846, D4RL score: 95.883
+Evaluation over 5 episodes: 10920.495, D4RL score: 90.218
 ---------------------------------------
 [Online] Time steps: 465000
 ---------------------------------------
-Evaluation over 5 episodes: 11508.224, D4RL score: 94.952
+Evaluation over 5 episodes: 6815.175, D4RL score: 57.151
 ---------------------------------------
 [Online] Time steps: 470000
 ---------------------------------------
-Evaluation over 5 episodes: 11674.135, D4RL score: 96.288
+Evaluation over 5 episodes: 10916.085, D4RL score: 90.182
 ---------------------------------------
 [Online] Time steps: 475000
 ---------------------------------------
-Evaluation over 5 episodes: 11400.423, D4RL score: 94.083
+Evaluation over 5 episodes: 11069.246, D4RL score: 91.416
 ---------------------------------------
 [Online] Time steps: 480000
 ---------------------------------------
-Evaluation over 5 episodes: 11754.915, D4RL score: 96.939
+Evaluation over 5 episodes: 11059.303, D4RL score: 91.336
 ---------------------------------------
 [Online] Time steps: 485000
 ---------------------------------------
-Evaluation over 5 episodes: 11544.463, D4RL score: 95.243
+Evaluation over 5 episodes: 10550.238, D4RL score: 87.235
 ---------------------------------------
 [Online] Time steps: 490000
 ---------------------------------------
-Evaluation over 5 episodes: 11731.604, D4RL score: 96.751
+Evaluation over 5 episodes: 11125.583, D4RL score: 91.869
 ---------------------------------------
 [Online] Time steps: 495000
 ---------------------------------------
-Evaluation over 5 episodes: 11555.172, D4RL score: 95.330
+Evaluation over 5 episodes: 11176.044, D4RL score: 92.276
 ---------------------------------------
 [Online] Time steps: 500000
 ---------------------------------------
-Evaluation over 5 episodes: 11550.636, D4RL score: 95.293
+Evaluation over 5 episodes: 11146.336, D4RL score: 92.037
 ---------------------------------------
