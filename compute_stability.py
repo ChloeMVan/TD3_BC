@@ -16,7 +16,7 @@ def compute_stability_scores(results_dir):
                     mean_score = np.mean(scores)
                     std_score = np.std(scores)
                     # Coefficient of variation as stability metric (lower is more stable)
-                    stability = np.var(np.diff(scores[len(scores)//2:]))
+                    stability = np.std(np.diff(scores[len(scores)//2:]))
                     stability_scores[file] = {
                         'mean': mean_score,
                         'std': std_score,
