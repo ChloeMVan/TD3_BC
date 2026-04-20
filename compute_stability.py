@@ -2,20 +2,22 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-RESULTS_DIR = "results"
+# CHANGE this for the results 
+RESULTS_DIR = "results/"
 OUTPUT_DIR = "results/graphs"
 
 def compute_stability_scores(results_dir):
     stability_scores = {}
     for file in os.listdir(results_dir):
-        if file.endswith('.npy'):
+        # CHANGE what the file name contains
+        if file.endswith('.npy') and "medium" in file:
             filepath = os.path.join(results_dir, file)
             try:
                 scores = np.load(filepath)
                 if len(scores) > 0:
                     mean_score = np.mean(scores)
                     std_score = np.std(scores)
-                    # Coefficient of variation as stability metric (lower is more stable)
+                    # stability metric 
                     stability = np.std(np.diff(scores[len(scores)//2:]))
                     stability_scores[file] = {
                         'mean': mean_score,
@@ -33,13 +35,24 @@ def plot_stability_bar(scores, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
+    # CHANGE what it sorts by lol
     files = list(scores.keys())
-    cvs = [scores[f]['cv'] for f in files]
+    files_p = [""]*3
+    for f in files:
+        if "Log" in f:
+            files_p[2] = f 
+        elif "Linear" in f:
+            files_p[1] = f
+        else:
+            files_p[0] = f
+
+    cvs = [scores[f]['cv'] for f in files_p]
     
-    plt.figure(figsize=(12, 6))
-    bars = plt.bar(range(len(files)), cvs, color='skyblue')
-    plt.xticks(range(len(files)), [f.replace('.npy', '').replace('_', '\n') for f in files], rotation=45, ha='right')
-    plt.ylabel('Stability Score (Coefficient of Variation)')
+    plt.figure(figsize=(10, 6))
+    bars = plt.bar(range(len(files)), cvs, color=["red", "green", "blue"])
+    plt.xticks(range(len(files)), ["Exp", "Linear", "Log"], rotation=0, ha='right')
+    plt.ylabel('Stability Score')
+    plt.ylim((0,12))
     plt.title('Learning Stability Scores for Each Run')
     plt.tight_layout()
     
@@ -47,6 +60,7 @@ def plot_stability_bar(scores, output_dir):
     for bar, cv in zip(bars, cvs):
         plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01, f'{cv:.3f}', ha='center', va='bottom')
     
+    # CHANGE the name of the output file 
     plt.savefig(os.path.join(output_dir, 'stability_bar.png'), dpi=300, bbox_inches='tight')
     plt.show()
 
