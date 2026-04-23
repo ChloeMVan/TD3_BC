@@ -3,14 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # CHANGE this for the results 
-RESULTS_DIR = "results/"
+RESULTS_DIR = "results/No_BC"
 OUTPUT_DIR = "results/graphs"
 
 def compute_stability_scores(results_dir):
     stability_scores = {}
     for file in os.listdir(results_dir):
         # CHANGE what the file name contains
-        if file.endswith('.npy') and "medium" in file:
+        if file.endswith('.npy') and "expert" in file and "medium-expert" not in file and "org" not in file:
             filepath = os.path.join(results_dir, file)
             try:
                 scores = np.load(filepath)
@@ -39,9 +39,9 @@ def plot_stability_bar(scores, output_dir):
     files = list(scores.keys())
     files_p = [""]*3
     for f in files:
-        if "Log" in f:
+        if "walker" in f:
             files_p[2] = f 
-        elif "Linear" in f:
+        elif "hopper" in f:
             files_p[1] = f
         else:
             files_p[0] = f
@@ -49,11 +49,12 @@ def plot_stability_bar(scores, output_dir):
     cvs = [scores[f]['cv'] for f in files_p]
     
     plt.figure(figsize=(10, 6))
-    bars = plt.bar(range(len(files)), cvs, color=["red", "green", "blue"])
-    plt.xticks(range(len(files)), ["Exp", "Linear", "Log"], rotation=0, ha='right')
+    bars = plt.bar(range(len(files)), cvs, color=["#1f77b4", "#d62728", "#2ca02c"])
+    plt.xticks(range(len(files)), ["Cheetah", "Hopper", "Walker"], rotation=0, ha='right')
     plt.ylabel('Stability Score')
-    plt.ylim((0,12))
-    plt.title('Learning Stability Scores for Each Run')
+    plt.ylim((0,35))
+    # CHANGE title 
+    plt.title('No BC Stability Scores (Expert)')
     plt.tight_layout()
     
     # Add value labels on bars
@@ -61,7 +62,7 @@ def plot_stability_bar(scores, output_dir):
         plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01, f'{cv:.3f}', ha='center', va='bottom')
     
     # CHANGE the name of the output file 
-    plt.savefig(os.path.join(output_dir, 'stability_bar.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, 'nobc_expert.png'), dpi=300, bbox_inches='tight')
     plt.show()
 
 if __name__ == "__main__":
