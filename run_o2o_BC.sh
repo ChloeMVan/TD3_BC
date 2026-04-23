@@ -30,6 +30,8 @@ do
         --file_tag 'BC_Mid' \
 		--env $env \
 		--seed $i \
-		--root_num 2.3
+		--function_type 'exp' \
+		--param_num 2.3 \
+		--max_timesteps 10000
 	done
 done

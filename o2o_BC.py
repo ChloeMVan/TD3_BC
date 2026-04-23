@@ -72,6 +72,9 @@ if __name__ == "__main__":
 	if not os.path.exists("./results"):
 		os.makedirs("./results")
 
+	if not os.path.exists("./lossresults"):
+		os.makedirs("./lossresults")
+
 	if args.save_model and not os.path.exists("./models"):
 		os.makedirs("./models")
 
@@ -125,9 +128,24 @@ if __name__ == "__main__":
 
 	print("STARTING OFFLINE TRAINING")
 	evaluations = []
+	actorlosses = []
+	criticlosses = []
 	offline_steps_taken = 0
 	for t in range(int(args.max_timesteps)):
-		policy.train(replay_buffer, args.batch_size)
+		critic_loss, actor_loss = policy.train(replay_buffer, args.batch_size)
+		if actor_loss is not None:
+			# actorlosses.append(actor_loss)
+			actorlosses.append(actor_loss.detach().cpu().numpy())
+		elif actorlosses:
+			actorlosses.append(actorlosses[-1])
+		else:
+			actorlosses.append(0)
+
+		# criticlosses.append(critic_loss)
+		criticlosses.append(critic_loss.detach().cpu().numpy())
+		np.save(f"./lossresults/{file_name}_actor", actorlosses)
+		np.save(f"./lossresults/{file_name}_critic", criticlosses)
+
 		offline_steps_taken = t + 1
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
@@ -208,7 +226,19 @@ if __name__ == "__main__":
 
 		# Train policy only once we have enough transitions
 		if replay_buffer.size >= args.batch_size:
-			policy.train(replay_buffer, args.batch_size, beta=beta)
+			critic_loss, actor_loss = policy.train(replay_buffer, args.batch_size, beta=beta)
+			# criticlosses.append(critic_loss)
+			criticlosses.append(critic_loss.detach().cpu().numpy())
+			if actor_loss is not None:
+				# actorlosses.append(actor_loss)
+				actorlosses.append(actor_loss.detach().cpu().numpy())
+			elif actorlosses:
+				actorlosses.append(actorlosses[-1])
+			else:
+				actorlosses.append(0)
+			np.save(f"./lossresults/{file_name}_actor", actorlosses)
+			np.save(f"./lossresults/{file_name}_critic", criticlosses)
+			
 
 		state = next_state_norm
 

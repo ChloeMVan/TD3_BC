@@ -132,6 +132,7 @@ class TD3_BC(object):
 		critic_loss.backward()
 		self.critic_optimizer.step()
 
+		actor_loss = None
 		# Delayed policy updates
 		if self.total_it % self.policy_freq == 0:
 
@@ -153,6 +154,8 @@ class TD3_BC(object):
 
 			for param, target_param in zip(self.actor.parameters(), self.actor_target.parameters()):
 				target_param.data.copy_(self.tau * param.data + (1 - self.tau) * target_param.data)
+
+		return critic_loss, actor_loss
 
 
 	def save(self, filename):
