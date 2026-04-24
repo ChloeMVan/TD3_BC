@@ -18,9 +18,13 @@ def eval_policy(policy, env_name, seed, mean, std, avgreward_array, seed_offset=
 	eval_env = gym.make(env_name)
 	eval_env.seed(seed + seed_offset)
 
-	avg_reward = 0.
+	avg_reward = 0
+	initial_states = []
+
 	for _ in range(eval_episodes):
 		state, done = eval_env.reset(), False
+		s0 = (np.array(state).reshape(1,-1) - mean)/std
+		initial_states.append(s0)
 		while not done:
 			state = (np.array(state).reshape(1,-1) - mean)/std
 			action = policy.select_action(state)
@@ -30,11 +34,21 @@ def eval_policy(policy, env_name, seed, mean, std, avgreward_array, seed_offset=
 	avg_reward /= eval_episodes
 	d4rl_score = eval_env.get_normalized_score(avg_reward) * 100
 
-	print("---------------------------------------")
-	print(f"Evaluation over {eval_episodes} episodes: {avg_reward:.3f}, D4RL score: {d4rl_score:.3f}")
-	print("---------------------------------------")
+	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+	s0_tensor = torch.FloatTensor(np.concatenate(initial_states, axis=0)).to(device)
+	with torch.no_grad():
+		predicted_V = policy.critic.Q1(
+            s0_tensor,
+            policy.actor(s0_tensor)
+        ).mean().item()
+		optimism_gap = predicted_V - avg_reward  # positive = overoptimistic
+
+	# print(f"Evaluation over {eval_episodes} episodes: {avg_reward:.3f}, D4RL: {d4rl_score:.3f}, predicted_V: {predicted_V:.3f}, gap: {optimism_gap:.3f}")
 	avgreward_array.append(avg_reward)
-	return d4rl_score
+	print("---------------------------------------")
+	print(f"Evaluation over {eval_episodes} episodes: {avg_reward:.3f}, D4RL: {d4rl_score:.3f}, predicted_V: {predicted_V:.3f}, gap: {optimism_gap:.3f}")
+	print("---------------------------------------")
+	return d4rl_score, predicted_V, optimism_gap
 
 
 if __name__ == "__main__":
@@ -140,9 +154,11 @@ if __name__ == "__main__":
 	target_Qs = []
 	current_Q1s = []
 	current_Q2s = []
+	ratio_log = []
+	optimism_gaps = []
 	offline_steps_taken = 0
 	for t in range(int(args.max_timesteps)):
-		critic_loss, actor_loss, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 = policy.train(replay_buffer, args.batch_size)
+		critic_loss, actor_loss, q_term, bc_term, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 =  policy.train(replay_buffer, args.batch_size)
 		if actor_loss is not None:
 			# actorlosses.append(actor_loss)
 			actorlosses.append(actor_loss.detach().cpu().numpy())
@@ -151,27 +167,40 @@ if __name__ == "__main__":
 		else:
 			actorlosses.append(0)
 
+		if q_term is not None:
+			ratio = abs(q_term.item()) / (abs(bc_term.item()) + 1e-8)
+			# q_term_log.append(q_term.item())
+			# bc_term_log.append(bc_term.item())
+			ratio_log.append(ratio)
+
 		# criticlosses.append(critic_loss)
-		criticlosses.append(critic_loss.detach().cpu().numpy())
-		target_Q1s.append(target_Q1.detach().cpu().numpy())
-		target_Q2s.append(target_Q2.detach().cpu().numpy())
-		target_Qs.append(target_Q.detach().cpu().numpy())
-		current_Q1s.append(current_Q1.detach().cpu().numpy())
-		current_Q2s.append(current_Q2.detach().cpu().numpy())
+		# criticlosses.append(critic_loss.detach().cpu().numpy())
+		# target_Q1s.append(target_Q1.detach().cpu().numpy())
+		# target_Q2s.append(target_Q2.detach().cpu().numpy())
+		# target_Qs.append(target_Q.detach().cpu().numpy())
+		# current_Q1s.append(current_Q1.detach().cpu().numpy())
+		# current_Q2s.append(current_Q2.detach().cpu().numpy())
 
 		offline_steps_taken = t + 1
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Offline] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, avgreward))
+			d4rl_score, predicted_V, optimism_gap = eval_policy(policy, args.env, args.seed, mean, std, avgreward)
+			evaluations.append(d4rl_score)
+			# predicted_Vs.append(predicted_V)
+			optimism_gaps.append(optimism_gap)
+
+			# np.save(f"./results/{file_name}_predicted_V", predicted_Vs)
+			np.save(f"./results/{file_name}_optimism_gap", optimism_gaps)
+			np.save(f"./results/{file_name}_ratio", ratio_log)
 			np.save(f"./results/{file_name}", evaluations)
-			np.save(f"./lossresults/{file_name}_actor", actorlosses)
-			np.save(f"./lossresults/{file_name}_critic", criticlosses)
-			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
-			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
-			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
-			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
-			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
+			# np.save(f"./lossresults/{file_name}_actor", actorlosses)
+			# np.save(f"./lossresults/{file_name}_critic", criticlosses)
+			# np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+			# np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+			# np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+			# np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+			# np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 			if args.save_model:
 				policy.save(f"./models/{file_name}")
 
@@ -246,7 +275,7 @@ if __name__ == "__main__":
 
 		# Train policy only once we have enough transitions
 		if replay_buffer.size >= args.batch_size:
-			critic_loss, actor_loss, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 = policy.train(replay_buffer, args.batch_size, beta=beta)
+			critic_loss, actor_loss, q_term, bc_term, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 = policy.train(replay_buffer, args.batch_size, beta=beta)
 			# criticlosses.append(critic_loss)
 			criticlosses.append(critic_loss.detach().cpu().numpy())
 			if actor_loss is not None:
@@ -257,11 +286,17 @@ if __name__ == "__main__":
 			else:
 				actorlosses.append(0)
 
-			target_Q1s.append(target_Q1.detach().cpu().numpy())
-			target_Q2s.append(target_Q2.detach().cpu().numpy())
-			target_Qs.append(target_Q.detach().cpu().numpy())
-			current_Q1s.append(current_Q1.detach().cpu().numpy())
-			current_Q2s.append(current_Q2.detach().cpu().numpy())
+			if q_term is not None:
+				ratio = abs(q_term.item()) / (abs(bc_term.item()) + 1e-8)
+				# q_term_log.append(q_term.item())
+				# bc_term_log.append(bc_term.item())
+				ratio_log.append(ratio)
+
+			# target_Q1s.append(target_Q1.detach().cpu().numpy())
+			# target_Q2s.append(target_Q2.detach().cpu().numpy())
+			# target_Qs.append(target_Q.detach().cpu().numpy())
+			# current_Q1s.append(current_Q1.detach().cpu().numpy())
+			# current_Q2s.append(current_Q2.detach().cpu().numpy())
 
 		state = next_state_norm
 
@@ -269,18 +304,27 @@ if __name__ == "__main__":
 			state, done = env.reset(), False
 			state = (np.array(state).reshape(1,-1) - mean)/std
 
+		
+
 		# Evaluation
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Online] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, avgreward))
+			d4rl_score, predicted_V, optimism_gap = eval_policy(policy, args.env, args.seed, mean, std, avgreward)
+			evaluations.append(d4rl_score)
+			# predicted_Vs.append(predicted_V)
+			optimism_gaps.append(optimism_gap)
+
+			# np.save(f"./results/{file_name}_predicted_V", predicted_Vs)
+			np.save(f"./results/{file_name}_optimism_gap", optimism_gaps)
+			np.save(f"./results/{file_name}_ratio", ratio_log)
 			np.save(f"./results/{file_name}", evaluations)
-			np.save(f"./lossresults/{file_name}_actor", actorlosses)
-			np.save(f"./lossresults/{file_name}_critic", criticlosses)
-			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
-			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
-			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
-			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
-			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
+			# np.save(f"./lossresults/{file_name}_actor", actorlosses)
+			# np.save(f"./lossresults/{file_name}_critic", criticlosses)
+			# np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+			# np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+			# np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+			# np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+			# np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 
 			if args.save_model:
 				policy.save(f"./models/{file_name}_online")

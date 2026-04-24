@@ -133,6 +133,8 @@ class TD3_BC(object):
 		self.critic_optimizer.step()
 
 		actor_loss = None
+		q_term = None      # ← add this
+		bc_term = None 
 		# Delayed policy updates
 		if self.total_it % self.policy_freq == 0:
 
@@ -141,7 +143,9 @@ class TD3_BC(object):
 			Q = self.critic.Q1(state, pi)
 			lmbda = self.alpha/Q.abs().mean().detach()
 
-			actor_loss = -lmbda * Q.mean() + beta * F.mse_loss(pi, action) 
+			q_term = -lmbda * Q.mean()
+			bc_term = beta * F.mse_loss(pi, action)
+			actor_loss = q_term + bc_term
 			
 			# Optimize the actor 
 			self.actor_optimizer.zero_grad()
@@ -155,7 +159,7 @@ class TD3_BC(object):
 			for param, target_param in zip(self.actor.parameters(), self.actor_target.parameters()):
 				target_param.data.copy_(self.tau * param.data + (1 - self.tau) * target_param.data)
 
-		return critic_loss, actor_loss, target_Q1, target_Q2, target_Q, current_Q1, current_Q2
+		return critic_loss, actor_loss, q_term, bc_term, target_Q1, target_Q2, target_Q, current_Q1, current_Q2
 
 
 	def save(self, filename):
