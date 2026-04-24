@@ -14,7 +14,7 @@ import TD3
 
 # Runs policy for X episodes and returns D4RL score
 # A fixed seed is used for the eval environment
-def eval_policy(policy, env_name, seed, mean, std, file_name, avgreward_array, seed_offset=100, eval_episodes=5):
+def eval_policy(policy, env_name, seed, mean, std, avgreward_array, seed_offset=100, eval_episodes=5):
 	eval_env = gym.make(env_name)
 	eval_env.seed(seed + seed_offset)
 
@@ -34,7 +34,6 @@ def eval_policy(policy, env_name, seed, mean, std, file_name, avgreward_array, s
 	print(f"Evaluation over {eval_episodes} episodes: {avg_reward:.3f}, D4RL score: {d4rl_score:.3f}")
 	print("---------------------------------------")
 	avgreward_array.append(avg_reward)
-	np.save(f"./rewards/{file_name}_raw", avgreward_array)
 	return d4rl_score
 
 
@@ -159,20 +158,20 @@ if __name__ == "__main__":
 		target_Qs.append(target_Q.detach().cpu().numpy())
 		current_Q1s.append(current_Q1.detach().cpu().numpy())
 		current_Q2s.append(current_Q2.detach().cpu().numpy())
-		np.save(f"./lossresults/{file_name}_actor", actorlosses)
-		np.save(f"./lossresults/{file_name}_critic", criticlosses)
-		np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
-		np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
-		np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
-		np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
-		np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 
 		offline_steps_taken = t + 1
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Offline] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, file_name, avgreward))
+			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, avgreward))
 			np.save(f"./results/{file_name}", evaluations)
+			np.save(f"./lossresults/{file_name}_actor", actorlosses)
+			np.save(f"./lossresults/{file_name}_critic", criticlosses)
+			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 			if args.save_model:
 				policy.save(f"./models/{file_name}")
 
@@ -263,14 +262,6 @@ if __name__ == "__main__":
 			target_Qs.append(target_Q.detach().cpu().numpy())
 			current_Q1s.append(current_Q1.detach().cpu().numpy())
 			current_Q2s.append(current_Q2.detach().cpu().numpy())
-			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
-			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
-			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
-			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
-			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
-			np.save(f"./lossresults/{file_name}_actor", actorlosses)
-			np.save(f"./lossresults/{file_name}_critic", criticlosses)
-			
 
 		state = next_state_norm
 
@@ -281,8 +272,15 @@ if __name__ == "__main__":
 		# Evaluation
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Online] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, file_name, avgreward))
+			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, avgreward))
 			np.save(f"./results/{file_name}", evaluations)
+			np.save(f"./lossresults/{file_name}_actor", actorlosses)
+			np.save(f"./lossresults/{file_name}_critic", criticlosses)
+			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 
 			if args.save_model:
 				policy.save(f"./models/{file_name}_online")
