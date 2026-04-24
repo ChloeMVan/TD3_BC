@@ -2019,3 +2019,1162 @@ Evaluation over 5 episodes: 1900.458, D4RL: 59.016, predicted_V: 208.102, gap: -
 ---------------------------------------
 [Offline] Time steps: 420000
 ---------------------------------------
+Evaluation over 5 episodes: 1592.999, D4RL: 49.569, predicted_V: 209.386, gap: -1383.613
+---------------------------------------
+[Offline] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 1918.165, D4RL: 59.560, predicted_V: 209.785, gap: -1708.380
+---------------------------------------
+[Offline] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 1694.503, D4RL: 52.688, predicted_V: 207.682, gap: -1486.821
+---------------------------------------
+[Offline] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 1816.817, D4RL: 56.446, predicted_V: 208.563, gap: -1608.254
+---------------------------------------
+[Offline] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 1872.265, D4RL: 58.150, predicted_V: 209.604, gap: -1662.662
+---------------------------------------
+[Offline] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 1682.961, D4RL: 52.334, predicted_V: 207.524, gap: -1475.438
+---------------------------------------
+[Offline] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 1999.589, D4RL: 62.062, predicted_V: 208.517, gap: -1791.072
+---------------------------------------
+[Offline] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 1785.771, D4RL: 55.492, predicted_V: 208.245, gap: -1577.526
+---------------------------------------
+[Offline] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 1848.032, D4RL: 57.406, predicted_V: 208.694, gap: -1639.338
+---------------------------------------
+[Offline] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 1802.675, D4RL: 56.012, predicted_V: 209.021, gap: -1593.654
+---------------------------------------
+[Offline] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 1724.331, D4RL: 53.605, predicted_V: 209.489, gap: -1514.842
+---------------------------------------
+[Offline] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 1836.398, D4RL: 57.048, predicted_V: 207.553, gap: -1628.845
+---------------------------------------
+[Offline] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 1820.461, D4RL: 56.558, predicted_V: 208.954, gap: -1611.507
+---------------------------------------
+[Offline] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 2038.749, D4RL: 63.265, predicted_V: 209.239, gap: -1829.510
+---------------------------------------
+[Offline] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 1630.440, D4RL: 50.720, predicted_V: 208.338, gap: -1422.102
+---------------------------------------
+[Offline] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 1759.922, D4RL: 54.698, predicted_V: 208.821, gap: -1551.101
+---------------------------------------
+[Offline] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 1853.827, D4RL: 57.584, predicted_V: 209.917, gap: -1643.910
+---------------------------------------
+STARTING ONLINE TRAINING
+[Online] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 1880.208, D4RL: 58.394, predicted_V: 208.671, gap: -1671.537
+---------------------------------------
+[Online] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 1807.488, D4RL: 56.160, predicted_V: 209.768, gap: -1597.721
+---------------------------------------
+[Online] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 1854.826, D4RL: 57.614, predicted_V: 209.307, gap: -1645.520
+---------------------------------------
+[Online] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 1939.963, D4RL: 60.230, predicted_V: 209.231, gap: -1730.732
+---------------------------------------
+[Online] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 2076.041, D4RL: 64.411, predicted_V: 209.475, gap: -1866.566
+---------------------------------------
+[Online] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 1803.015, D4RL: 56.022, predicted_V: 209.854, gap: -1593.161
+---------------------------------------
+[Online] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 1829.755, D4RL: 56.844, predicted_V: 209.350, gap: -1620.405
+---------------------------------------
+[Online] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 1808.182, D4RL: 56.181, predicted_V: 210.393, gap: -1597.789
+---------------------------------------
+[Online] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 1971.218, D4RL: 61.191, predicted_V: 210.160, gap: -1761.057
+---------------------------------------
+[Online] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 1892.578, D4RL: 58.774, predicted_V: 210.034, gap: -1682.544
+---------------------------------------
+[Online] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 1917.088, D4RL: 59.527, predicted_V: 208.944, gap: -1708.144
+---------------------------------------
+[Online] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 2149.082, D4RL: 66.656, predicted_V: 210.582, gap: -1938.500
+---------------------------------------
+[Online] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 1859.128, D4RL: 57.746, predicted_V: 210.562, gap: -1648.565
+---------------------------------------
+[Online] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 1978.541, D4RL: 61.416, predicted_V: 209.613, gap: -1768.929
+---------------------------------------
+[Online] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 1882.162, D4RL: 58.454, predicted_V: 211.656, gap: -1670.506
+---------------------------------------
+[Online] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 1575.033, D4RL: 49.017, predicted_V: 210.671, gap: -1364.363
+---------------------------------------
+[Online] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 2025.812, D4RL: 62.868, predicted_V: 210.601, gap: -1815.211
+---------------------------------------
+[Online] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 1780.539, D4RL: 55.332, predicted_V: 211.187, gap: -1569.352
+---------------------------------------
+[Online] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 1686.948, D4RL: 52.456, predicted_V: 211.163, gap: -1475.785
+---------------------------------------
+[Online] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 2438.302, D4RL: 75.542, predicted_V: 210.775, gap: -2227.527
+---------------------------------------
+[Online] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 2033.233, D4RL: 63.096, predicted_V: 210.432, gap: -1822.801
+---------------------------------------
+[Online] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 1679.588, D4RL: 52.230, predicted_V: 210.743, gap: -1468.845
+---------------------------------------
+[Online] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 1780.758, D4RL: 55.338, predicted_V: 211.464, gap: -1569.294
+---------------------------------------
+[Online] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 2170.963, D4RL: 67.328, predicted_V: 211.861, gap: -1959.102
+---------------------------------------
+[Online] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 1861.603, D4RL: 57.822, predicted_V: 210.838, gap: -1650.765
+---------------------------------------
+[Online] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 1995.396, D4RL: 61.933, predicted_V: 211.804, gap: -1783.593
+---------------------------------------
+[Online] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 1843.527, D4RL: 57.267, predicted_V: 211.743, gap: -1631.783
+---------------------------------------
+[Online] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 1777.085, D4RL: 55.226, predicted_V: 211.956, gap: -1565.129
+---------------------------------------
+[Online] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 2162.844, D4RL: 67.078, predicted_V: 211.322, gap: -1951.522
+---------------------------------------
+[Online] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 1785.263, D4RL: 55.477, predicted_V: 211.662, gap: -1573.602
+---------------------------------------
+[Online] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 1858.727, D4RL: 57.734, predicted_V: 213.982, gap: -1644.745
+---------------------------------------
+[Online] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 1743.828, D4RL: 54.204, predicted_V: 213.348, gap: -1530.480
+---------------------------------------
+[Online] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 1991.092, D4RL: 61.801, predicted_V: 213.147, gap: -1777.945
+---------------------------------------
+[Online] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 1747.197, D4RL: 54.307, predicted_V: 212.089, gap: -1535.108
+---------------------------------------
+[Online] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 2048.822, D4RL: 63.575, predicted_V: 212.283, gap: -1836.539
+---------------------------------------
+[Online] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 2084.831, D4RL: 64.681, predicted_V: 212.533, gap: -1872.298
+---------------------------------------
+[Online] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 1991.976, D4RL: 61.828, predicted_V: 211.764, gap: -1780.212
+---------------------------------------
+[Online] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 1509.981, D4RL: 47.019, predicted_V: 212.299, gap: -1297.682
+---------------------------------------
+[Online] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 1914.256, D4RL: 59.440, predicted_V: 212.503, gap: -1701.754
+---------------------------------------
+[Online] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 1932.759, D4RL: 60.009, predicted_V: 212.571, gap: -1720.188
+---------------------------------------
+[Online] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 2453.800, D4RL: 76.018, predicted_V: 211.228, gap: -2242.572
+---------------------------------------
+[Online] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 1861.172, D4RL: 57.809, predicted_V: 213.466, gap: -1647.706
+---------------------------------------
+[Online] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 1855.085, D4RL: 57.622, predicted_V: 213.305, gap: -1641.780
+---------------------------------------
+[Online] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 1857.160, D4RL: 57.686, predicted_V: 213.657, gap: -1643.503
+---------------------------------------
+[Online] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 1890.961, D4RL: 58.725, predicted_V: 213.057, gap: -1677.904
+---------------------------------------
+[Online] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 1783.823, D4RL: 55.433, predicted_V: 213.973, gap: -1569.850
+---------------------------------------
+[Online] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 2027.916, D4RL: 62.933, predicted_V: 214.053, gap: -1813.864
+---------------------------------------
+[Online] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 1663.014, D4RL: 51.721, predicted_V: 212.550, gap: -1450.464
+---------------------------------------
+[Online] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 2134.518, D4RL: 66.208, predicted_V: 213.871, gap: -1920.647
+---------------------------------------
+[Online] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 1728.611, D4RL: 53.736, predicted_V: 214.018, gap: -1514.592
+---------------------------------------
+[Online] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 1880.801, D4RL: 58.412, predicted_V: 213.902, gap: -1666.900
+---------------------------------------
+[Online] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 1650.462, D4RL: 51.335, predicted_V: 214.560, gap: -1435.902
+---------------------------------------
+[Online] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 1883.517, D4RL: 58.496, predicted_V: 214.218, gap: -1669.300
+---------------------------------------
+[Online] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 2107.395, D4RL: 65.375, predicted_V: 214.269, gap: -1893.126
+---------------------------------------
+[Online] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 1439.375, D4RL: 44.849, predicted_V: 214.870, gap: -1224.505
+---------------------------------------
+[Online] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 1852.969, D4RL: 57.557, predicted_V: 215.453, gap: -1637.517
+---------------------------------------
+[Online] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 1883.326, D4RL: 58.490, predicted_V: 213.146, gap: -1670.180
+---------------------------------------
+[Online] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 2009.124, D4RL: 62.355, predicted_V: 214.132, gap: -1794.992
+---------------------------------------
+[Online] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 1897.771, D4RL: 58.934, predicted_V: 214.965, gap: -1682.806
+---------------------------------------
+[Online] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 2156.231, D4RL: 66.875, predicted_V: 215.389, gap: -1940.842
+---------------------------------------
+[Online] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 1875.288, D4RL: 58.243, predicted_V: 214.685, gap: -1660.603
+---------------------------------------
+[Online] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 1677.085, D4RL: 52.153, predicted_V: 214.334, gap: -1462.751
+---------------------------------------
+[Online] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 1981.906, D4RL: 61.519, predicted_V: 214.653, gap: -1767.253
+---------------------------------------
+[Online] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 2333.321, D4RL: 72.317, predicted_V: 214.531, gap: -2118.790
+---------------------------------------
+[Online] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 1763.109, D4RL: 54.796, predicted_V: 215.190, gap: -1547.919
+---------------------------------------
+[Online] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 2132.987, D4RL: 66.161, predicted_V: 215.071, gap: -1917.916
+---------------------------------------
+[Online] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 2205.275, D4RL: 68.382, predicted_V: 215.116, gap: -1990.158
+---------------------------------------
+[Online] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 1703.251, D4RL: 52.957, predicted_V: 216.025, gap: -1487.226
+---------------------------------------
+[Online] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 1891.463, D4RL: 58.740, predicted_V: 214.782, gap: -1676.681
+---------------------------------------
+[Online] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 2349.411, D4RL: 72.811, predicted_V: 215.769, gap: -2133.642
+---------------------------------------
+[Online] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 2271.505, D4RL: 70.417, predicted_V: 216.136, gap: -2055.369
+---------------------------------------
+[Online] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 1889.721, D4RL: 58.686, predicted_V: 215.625, gap: -1674.096
+---------------------------------------
+[Online] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 1943.096, D4RL: 60.326, predicted_V: 215.147, gap: -1727.948
+---------------------------------------
+[Online] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 2007.937, D4RL: 62.319, predicted_V: 215.300, gap: -1792.637
+---------------------------------------
+[Online] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 2085.097, D4RL: 64.690, predicted_V: 215.765, gap: -1869.332
+---------------------------------------
+[Online] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 1878.730, D4RL: 58.349, predicted_V: 215.972, gap: -1662.758
+---------------------------------------
+[Online] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 2168.894, D4RL: 67.264, predicted_V: 216.085, gap: -1952.809
+---------------------------------------
+[Online] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 1909.071, D4RL: 59.281, predicted_V: 215.524, gap: -1693.548
+---------------------------------------
+[Online] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 2055.590, D4RL: 63.783, predicted_V: 216.987, gap: -1838.603
+---------------------------------------
+[Online] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 1993.255, D4RL: 61.868, predicted_V: 215.802, gap: -1777.453
+---------------------------------------
+[Online] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 2273.832, D4RL: 70.489, predicted_V: 216.363, gap: -2057.469
+---------------------------------------
+[Online] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 1782.712, D4RL: 55.399, predicted_V: 215.453, gap: -1567.259
+---------------------------------------
+[Online] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 2227.935, D4RL: 69.078, predicted_V: 216.302, gap: -2011.633
+---------------------------------------
+[Online] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 2777.711, D4RL: 85.971, predicted_V: 217.838, gap: -2559.873
+---------------------------------------
+[Online] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 2085.581, D4RL: 64.704, predicted_V: 217.063, gap: -1868.518
+---------------------------------------
+[Online] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 2129.078, D4RL: 66.041, predicted_V: 217.891, gap: -1911.187
+---------------------------------------
+[Online] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 2149.409, D4RL: 66.666, predicted_V: 216.980, gap: -1932.429
+---------------------------------------
+[Online] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 1797.159, D4RL: 55.842, predicted_V: 216.822, gap: -1580.336
+---------------------------------------
+[Online] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 2163.294, D4RL: 67.092, predicted_V: 216.780, gap: -1946.514
+---------------------------------------
+[Online] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 1959.488, D4RL: 60.830, predicted_V: 217.163, gap: -1742.325
+---------------------------------------
+[Online] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 2380.545, D4RL: 73.768, predicted_V: 216.760, gap: -2163.785
+---------------------------------------
+[Online] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 1884.170, D4RL: 58.516, predicted_V: 216.625, gap: -1667.545
+---------------------------------------
+[Online] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 1925.353, D4RL: 59.781, predicted_V: 216.964, gap: -1708.389
+---------------------------------------
+[Online] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 2162.005, D4RL: 67.053, predicted_V: 216.790, gap: -1945.215
+---------------------------------------
+[Online] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 2287.075, D4RL: 70.896, predicted_V: 217.196, gap: -2069.879
+---------------------------------------
+[Online] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 2524.955, D4RL: 78.205, predicted_V: 218.365, gap: -2306.590
+---------------------------------------
+[Online] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 2037.082, D4RL: 63.214, predicted_V: 217.392, gap: -1819.691
+---------------------------------------
+[Online] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 2182.453, D4RL: 67.681, predicted_V: 217.750, gap: -1964.703
+---------------------------------------
+[Online] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 2027.468, D4RL: 62.919, predicted_V: 217.055, gap: -1810.413
+---------------------------------------
+[Online] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 3035.479, D4RL: 93.891, predicted_V: 219.057, gap: -2816.422
+---------------------------------------
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:530: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.15; use exec_module() instead
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Mar 10 2026 04:43:59
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/pybullet_envs/env_bases.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Policy: TD3_BC, Env: hopper-expert-v2, Seed: 0
+---------------------------------------
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:  10%|▉         | 2/21 [00:00<00:01, 17.83it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:03,  5.51it/s]load datafile:  81%|████████  | 17/21 [00:00<00:00, 20.34it/s]load datafile:  95%|█████████▌| 20/21 [00:01<00:00, 15.69it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 15.84it/s]
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/chloe/miniconda3/envs/td3_env/lib/python3.12/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+STARTING OFFLINE TRAINING
+[Offline] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 704.568, D4RL: 22.271, predicted_V: 12.901, gap: -691.666
+---------------------------------------
+[Offline] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 2877.010, D4RL: 89.022, predicted_V: 27.672, gap: -2849.339
+---------------------------------------
+[Offline] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 1776.896, D4RL: 55.220, predicted_V: 45.439, gap: -1731.457
+---------------------------------------
+[Offline] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 912.856, D4RL: 28.671, predicted_V: 64.436, gap: -848.419
+---------------------------------------
+[Offline] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 2578.438, D4RL: 79.848, predicted_V: 84.963, gap: -2493.476
+---------------------------------------
+[Offline] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 2686.979, D4RL: 83.183, predicted_V: 101.655, gap: -2585.324
+---------------------------------------
+[Offline] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 3324.011, D4RL: 102.756, predicted_V: 115.688, gap: -3208.324
+---------------------------------------
+[Offline] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 3146.881, D4RL: 97.314, predicted_V: 129.677, gap: -3017.205
+---------------------------------------
+[Offline] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 3647.165, D4RL: 112.686, predicted_V: 142.391, gap: -3504.774
+---------------------------------------
+[Offline] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 3120.392, D4RL: 96.500, predicted_V: 154.411, gap: -2965.981
+---------------------------------------
+[Offline] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 3371.031, D4RL: 104.201, predicted_V: 163.119, gap: -3207.912
+---------------------------------------
+[Offline] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 3061.781, D4RL: 94.699, predicted_V: 173.444, gap: -2888.337
+---------------------------------------
+[Offline] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 1891.208, D4RL: 58.732, predicted_V: 182.907, gap: -1708.301
+---------------------------------------
+[Offline] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 3059.812, D4RL: 94.639, predicted_V: 191.027, gap: -2868.785
+---------------------------------------
+[Offline] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 3622.216, D4RL: 111.919, predicted_V: 199.071, gap: -3423.144
+---------------------------------------
+[Offline] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 3630.847, D4RL: 112.184, predicted_V: 205.262, gap: -3425.585
+---------------------------------------
+[Offline] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 3663.576, D4RL: 113.190, predicted_V: 210.804, gap: -3452.772
+---------------------------------------
+[Offline] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 3634.950, D4RL: 112.310, predicted_V: 216.557, gap: -3418.392
+---------------------------------------
+[Offline] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 2861.271, D4RL: 88.538, predicted_V: 219.625, gap: -2641.645
+---------------------------------------
+[Offline] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 2971.533, D4RL: 91.926, predicted_V: 223.048, gap: -2748.485
+---------------------------------------
+[Offline] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 1464.790, D4RL: 45.630, predicted_V: 226.711, gap: -1238.078
+---------------------------------------
+[Offline] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 3516.813, D4RL: 108.680, predicted_V: 229.530, gap: -3287.283
+---------------------------------------
+[Offline] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 3654.389, D4RL: 112.908, predicted_V: 231.184, gap: -3423.205
+---------------------------------------
+[Offline] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 3664.611, D4RL: 113.222, predicted_V: 234.068, gap: -3430.543
+---------------------------------------
+[Offline] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 3615.331, D4RL: 111.708, predicted_V: 236.293, gap: -3379.039
+---------------------------------------
+[Offline] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 3630.590, D4RL: 112.176, predicted_V: 237.445, gap: -3393.144
+---------------------------------------
+[Offline] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 3609.755, D4RL: 111.536, predicted_V: 239.531, gap: -3370.225
+---------------------------------------
+[Offline] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 3281.402, D4RL: 101.447, predicted_V: 240.905, gap: -3040.497
+---------------------------------------
+[Offline] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 3270.020, D4RL: 101.098, predicted_V: 242.782, gap: -3027.239
+---------------------------------------
+[Offline] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 3268.576, D4RL: 101.053, predicted_V: 243.117, gap: -3025.459
+---------------------------------------
+[Offline] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 3612.468, D4RL: 111.620, predicted_V: 244.208, gap: -3368.260
+---------------------------------------
+[Offline] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 3149.059, D4RL: 97.381, predicted_V: 245.211, gap: -2903.847
+---------------------------------------
+[Offline] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 3648.359, D4RL: 112.722, predicted_V: 246.526, gap: -3401.833
+---------------------------------------
+[Offline] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 3600.183, D4RL: 111.242, predicted_V: 246.695, gap: -3353.488
+---------------------------------------
+[Offline] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 3641.424, D4RL: 112.509, predicted_V: 247.766, gap: -3393.658
+---------------------------------------
+[Offline] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 3640.757, D4RL: 112.489, predicted_V: 249.690, gap: -3391.067
+---------------------------------------
+[Offline] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 3633.911, D4RL: 112.278, predicted_V: 250.302, gap: -3383.609
+---------------------------------------
+[Offline] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 3599.649, D4RL: 111.226, predicted_V: 249.283, gap: -3350.367
+---------------------------------------
+[Offline] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 3628.102, D4RL: 112.100, predicted_V: 250.095, gap: -3378.008
+---------------------------------------
+[Offline] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 3653.246, D4RL: 112.873, predicted_V: 249.918, gap: -3403.329
+---------------------------------------
+[Offline] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 3594.083, D4RL: 111.055, predicted_V: 251.200, gap: -3342.883
+---------------------------------------
+[Offline] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 3628.195, D4RL: 112.103, predicted_V: 251.297, gap: -3376.898
+---------------------------------------
+[Offline] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 3599.310, D4RL: 111.215, predicted_V: 251.131, gap: -3348.179
+---------------------------------------
+[Offline] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 3618.545, D4RL: 111.806, predicted_V: 251.270, gap: -3367.276
+---------------------------------------
+[Offline] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 3598.080, D4RL: 111.178, predicted_V: 251.357, gap: -3346.723
+---------------------------------------
+[Offline] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 3645.724, D4RL: 112.641, predicted_V: 252.132, gap: -3393.592
+---------------------------------------
+[Offline] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 3615.956, D4RL: 111.727, predicted_V: 252.505, gap: -3363.451
+---------------------------------------
+[Offline] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 3611.907, D4RL: 111.602, predicted_V: 251.708, gap: -3360.199
+---------------------------------------
+[Offline] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 3620.831, D4RL: 111.877, predicted_V: 253.839, gap: -3366.992
+---------------------------------------
+[Offline] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 3626.660, D4RL: 112.056, predicted_V: 253.262, gap: -3373.398
+---------------------------------------
+[Offline] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 3600.358, D4RL: 111.247, predicted_V: 253.606, gap: -3346.751
+---------------------------------------
+[Offline] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 3281.070, D4RL: 101.437, predicted_V: 252.474, gap: -3028.597
+---------------------------------------
+[Offline] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 3618.704, D4RL: 111.811, predicted_V: 252.933, gap: -3365.771
+---------------------------------------
+[Offline] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 3644.245, D4RL: 112.596, predicted_V: 252.497, gap: -3391.747
+---------------------------------------
+[Offline] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 3605.477, D4RL: 111.405, predicted_V: 253.312, gap: -3352.165
+---------------------------------------
+[Offline] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 3629.635, D4RL: 112.147, predicted_V: 252.830, gap: -3376.805
+---------------------------------------
+[Offline] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 3628.740, D4RL: 112.120, predicted_V: 252.720, gap: -3376.020
+---------------------------------------
+[Offline] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 3602.518, D4RL: 111.314, predicted_V: 252.870, gap: -3349.648
+---------------------------------------
+[Offline] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 3608.401, D4RL: 111.495, predicted_V: 253.400, gap: -3355.001
+---------------------------------------
+[Offline] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 3606.706, D4RL: 111.443, predicted_V: 254.034, gap: -3352.672
+---------------------------------------
+[Offline] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 3642.743, D4RL: 112.550, predicted_V: 254.390, gap: -3388.353
+---------------------------------------
+[Offline] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 3635.702, D4RL: 112.333, predicted_V: 253.764, gap: -3381.938
+---------------------------------------
+[Offline] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 3611.740, D4RL: 111.597, predicted_V: 253.842, gap: -3357.898
+---------------------------------------
+[Offline] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 3611.576, D4RL: 111.592, predicted_V: 253.458, gap: -3358.118
+---------------------------------------
+[Offline] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 3633.242, D4RL: 112.258, predicted_V: 254.064, gap: -3379.178
+---------------------------------------
+[Offline] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 3601.780, D4RL: 111.291, predicted_V: 253.957, gap: -3347.824
+---------------------------------------
+[Offline] Time steps: 335000
+---------------------------------------
+Evaluation over 5 episodes: 3618.297, D4RL: 111.799, predicted_V: 254.378, gap: -3363.919
+---------------------------------------
+[Offline] Time steps: 340000
+---------------------------------------
+Evaluation over 5 episodes: 3629.381, D4RL: 112.139, predicted_V: 254.553, gap: -3374.828
+---------------------------------------
+[Offline] Time steps: 345000
+---------------------------------------
+Evaluation over 5 episodes: 3602.369, D4RL: 111.309, predicted_V: 254.022, gap: -3348.347
+---------------------------------------
+[Offline] Time steps: 350000
+---------------------------------------
+Evaluation over 5 episodes: 3615.178, D4RL: 111.703, predicted_V: 254.626, gap: -3360.552
+---------------------------------------
+[Offline] Time steps: 355000
+---------------------------------------
+Evaluation over 5 episodes: 3610.106, D4RL: 111.547, predicted_V: 254.339, gap: -3355.767
+---------------------------------------
+[Offline] Time steps: 360000
+---------------------------------------
+Evaluation over 5 episodes: 3627.272, D4RL: 112.074, predicted_V: 254.306, gap: -3372.966
+---------------------------------------
+[Offline] Time steps: 365000
+---------------------------------------
+Evaluation over 5 episodes: 3594.772, D4RL: 111.076, predicted_V: 253.730, gap: -3341.042
+---------------------------------------
+[Offline] Time steps: 370000
+---------------------------------------
+Evaluation over 5 episodes: 3646.563, D4RL: 112.667, predicted_V: 253.985, gap: -3392.578
+---------------------------------------
+[Offline] Time steps: 375000
+---------------------------------------
+Evaluation over 5 episodes: 3604.355, D4RL: 111.370, predicted_V: 253.691, gap: -3350.664
+---------------------------------------
+[Offline] Time steps: 380000
+---------------------------------------
+Evaluation over 5 episodes: 3648.475, D4RL: 112.726, predicted_V: 254.249, gap: -3394.225
+---------------------------------------
+[Offline] Time steps: 385000
+---------------------------------------
+Evaluation over 5 episodes: 3449.410, D4RL: 106.609, predicted_V: 253.748, gap: -3195.662
+---------------------------------------
+[Offline] Time steps: 390000
+---------------------------------------
+Evaluation over 5 episodes: 3602.012, D4RL: 111.298, predicted_V: 254.638, gap: -3347.374
+---------------------------------------
+[Offline] Time steps: 395000
+---------------------------------------
+Evaluation over 5 episodes: 3037.312, D4RL: 93.947, predicted_V: 254.079, gap: -2783.233
+---------------------------------------
+[Offline] Time steps: 400000
+---------------------------------------
+Evaluation over 5 episodes: 3320.950, D4RL: 102.662, predicted_V: 254.038, gap: -3066.911
+---------------------------------------
+[Offline] Time steps: 405000
+---------------------------------------
+Evaluation over 5 episodes: 3631.756, D4RL: 112.212, predicted_V: 253.735, gap: -3378.022
+---------------------------------------
+[Offline] Time steps: 410000
+---------------------------------------
+Evaluation over 5 episodes: 3618.335, D4RL: 111.800, predicted_V: 253.817, gap: -3364.518
+---------------------------------------
+[Offline] Time steps: 415000
+---------------------------------------
+Evaluation over 5 episodes: 3678.248, D4RL: 113.641, predicted_V: 254.077, gap: -3424.171
+---------------------------------------
+[Offline] Time steps: 420000
+---------------------------------------
+Evaluation over 5 episodes: 3623.124, D4RL: 111.947, predicted_V: 253.868, gap: -3369.255
+---------------------------------------
+[Offline] Time steps: 425000
+---------------------------------------
+Evaluation over 5 episodes: 3308.387, D4RL: 102.276, predicted_V: 254.992, gap: -3053.395
+---------------------------------------
+[Offline] Time steps: 430000
+---------------------------------------
+Evaluation over 5 episodes: 3190.430, D4RL: 98.652, predicted_V: 254.704, gap: -2935.726
+---------------------------------------
+[Offline] Time steps: 435000
+---------------------------------------
+Evaluation over 5 episodes: 3674.705, D4RL: 113.532, predicted_V: 254.638, gap: -3420.067
+---------------------------------------
+[Offline] Time steps: 440000
+---------------------------------------
+Evaluation over 5 episodes: 3615.288, D4RL: 111.706, predicted_V: 254.665, gap: -3360.623
+---------------------------------------
+[Offline] Time steps: 445000
+---------------------------------------
+Evaluation over 5 episodes: 3633.922, D4RL: 112.279, predicted_V: 254.645, gap: -3379.277
+---------------------------------------
+[Offline] Time steps: 450000
+---------------------------------------
+Evaluation over 5 episodes: 3607.857, D4RL: 111.478, predicted_V: 253.707, gap: -3354.150
+---------------------------------------
+[Offline] Time steps: 455000
+---------------------------------------
+Evaluation over 5 episodes: 3668.074, D4RL: 113.328, predicted_V: 254.017, gap: -3414.056
+---------------------------------------
+[Offline] Time steps: 460000
+---------------------------------------
+Evaluation over 5 episodes: 3654.222, D4RL: 112.903, predicted_V: 254.101, gap: -3400.121
+---------------------------------------
+[Offline] Time steps: 465000
+---------------------------------------
+Evaluation over 5 episodes: 3516.816, D4RL: 108.681, predicted_V: 254.665, gap: -3262.151
+---------------------------------------
+[Offline] Time steps: 470000
+---------------------------------------
+Evaluation over 5 episodes: 3608.588, D4RL: 111.500, predicted_V: 254.077, gap: -3354.511
+---------------------------------------
+[Offline] Time steps: 475000
+---------------------------------------
+Evaluation over 5 episodes: 3646.475, D4RL: 112.664, predicted_V: 254.801, gap: -3391.674
+---------------------------------------
+[Offline] Time steps: 480000
+---------------------------------------
+Evaluation over 5 episodes: 3644.923, D4RL: 112.617, predicted_V: 255.257, gap: -3389.666
+---------------------------------------
+[Offline] Time steps: 485000
+---------------------------------------
+Evaluation over 5 episodes: 3633.197, D4RL: 112.257, predicted_V: 253.831, gap: -3379.366
+---------------------------------------
+[Offline] Time steps: 490000
+---------------------------------------
+Evaluation over 5 episodes: 2473.540, D4RL: 76.625, predicted_V: 255.633, gap: -2217.907
+---------------------------------------
+[Offline] Time steps: 495000
+---------------------------------------
+Evaluation over 5 episodes: 3599.032, D4RL: 111.207, predicted_V: 254.926, gap: -3344.106
+---------------------------------------
+[Offline] Time steps: 500000
+---------------------------------------
+Evaluation over 5 episodes: 2944.446, D4RL: 91.094, predicted_V: 254.984, gap: -2689.463
+---------------------------------------
+STARTING ONLINE TRAINING
+[Online] Time steps: 5000
+---------------------------------------
+Evaluation over 5 episodes: 1732.746, D4RL: 53.863, predicted_V: 260.129, gap: -1472.617
+---------------------------------------
+[Online] Time steps: 10000
+---------------------------------------
+Evaluation over 5 episodes: 1793.257, D4RL: 55.722, predicted_V: 268.803, gap: -1524.454
+---------------------------------------
+[Online] Time steps: 15000
+---------------------------------------
+Evaluation over 5 episodes: 9.908, D4RL: 0.927, predicted_V: 276.716, gap: 266.808
+---------------------------------------
+[Online] Time steps: 20000
+---------------------------------------
+Evaluation over 5 episodes: 1715.484, D4RL: 53.333, predicted_V: 277.473, gap: -1438.010
+---------------------------------------
+[Online] Time steps: 25000
+---------------------------------------
+Evaluation over 5 episodes: 1435.653, D4RL: 44.735, predicted_V: 296.828, gap: -1138.825
+---------------------------------------
+[Online] Time steps: 30000
+---------------------------------------
+Evaluation over 5 episodes: 705.791, D4RL: 22.309, predicted_V: 308.429, gap: -397.362
+---------------------------------------
+[Online] Time steps: 35000
+---------------------------------------
+Evaluation over 5 episodes: 812.628, D4RL: 25.592, predicted_V: 302.013, gap: -510.614
+---------------------------------------
+[Online] Time steps: 40000
+---------------------------------------
+Evaluation over 5 episodes: 833.464, D4RL: 26.232, predicted_V: 297.902, gap: -535.561
+---------------------------------------
+[Online] Time steps: 45000
+---------------------------------------
+Evaluation over 5 episodes: 844.052, D4RL: 26.557, predicted_V: 295.411, gap: -548.641
+---------------------------------------
+[Online] Time steps: 50000
+---------------------------------------
+Evaluation over 5 episodes: 3456.193, D4RL: 106.818, predicted_V: 289.709, gap: -3166.484
+---------------------------------------
+[Online] Time steps: 55000
+---------------------------------------
+Evaluation over 5 episodes: 248.499, D4RL: 8.258, predicted_V: 285.948, gap: 37.449
+---------------------------------------
+[Online] Time steps: 60000
+---------------------------------------
+Evaluation over 5 episodes: 2467.459, D4RL: 76.438, predicted_V: 283.611, gap: -2183.848
+---------------------------------------
+[Online] Time steps: 65000
+---------------------------------------
+Evaluation over 5 episodes: 3516.463, D4RL: 108.670, predicted_V: 281.750, gap: -3234.713
+---------------------------------------
+[Online] Time steps: 70000
+---------------------------------------
+Evaluation over 5 episodes: 3554.977, D4RL: 109.853, predicted_V: 285.136, gap: -3269.842
+---------------------------------------
+[Online] Time steps: 75000
+---------------------------------------
+Evaluation over 5 episodes: 3574.813, D4RL: 110.463, predicted_V: 289.117, gap: -3285.696
+---------------------------------------
+[Online] Time steps: 80000
+---------------------------------------
+Evaluation over 5 episodes: 3569.687, D4RL: 110.305, predicted_V: 289.092, gap: -3280.595
+---------------------------------------
+[Online] Time steps: 85000
+---------------------------------------
+Evaluation over 5 episodes: 3532.108, D4RL: 109.150, predicted_V: 299.316, gap: -3232.792
+---------------------------------------
+[Online] Time steps: 90000
+---------------------------------------
+Evaluation over 5 episodes: 2884.212, D4RL: 89.243, predicted_V: 304.688, gap: -2579.524
+---------------------------------------
+[Online] Time steps: 95000
+---------------------------------------
+Evaluation over 5 episodes: 3565.678, D4RL: 110.182, predicted_V: 299.976, gap: -3265.702
+---------------------------------------
+[Online] Time steps: 100000
+---------------------------------------
+Evaluation over 5 episodes: 3580.156, D4RL: 110.627, predicted_V: 297.063, gap: -3283.093
+---------------------------------------
+[Online] Time steps: 105000
+---------------------------------------
+Evaluation over 5 episodes: 3577.477, D4RL: 110.544, predicted_V: 302.422, gap: -3275.055
+---------------------------------------
+[Online] Time steps: 110000
+---------------------------------------
+Evaluation over 5 episodes: 3607.456, D4RL: 111.466, predicted_V: 307.002, gap: -3300.454
+---------------------------------------
+[Online] Time steps: 115000
+---------------------------------------
+Evaluation over 5 episodes: 3612.566, D4RL: 111.623, predicted_V: 303.138, gap: -3309.428
+---------------------------------------
+[Online] Time steps: 120000
+---------------------------------------
+Evaluation over 5 episodes: 3611.054, D4RL: 111.576, predicted_V: 300.111, gap: -3310.943
+---------------------------------------
+[Online] Time steps: 125000
+---------------------------------------
+Evaluation over 5 episodes: 3576.288, D4RL: 110.508, predicted_V: 300.463, gap: -3275.826
+---------------------------------------
+[Online] Time steps: 130000
+---------------------------------------
+Evaluation over 5 episodes: 3622.100, D4RL: 111.916, predicted_V: 297.360, gap: -3324.739
+---------------------------------------
+[Online] Time steps: 135000
+---------------------------------------
+Evaluation over 5 episodes: 3636.995, D4RL: 112.373, predicted_V: 304.171, gap: -3332.824
+---------------------------------------
+[Online] Time steps: 140000
+---------------------------------------
+Evaluation over 5 episodes: 3655.954, D4RL: 112.956, predicted_V: 300.548, gap: -3355.405
+---------------------------------------
+[Online] Time steps: 145000
+---------------------------------------
+Evaluation over 5 episodes: 3253.050, D4RL: 100.576, predicted_V: 295.904, gap: -2957.146
+---------------------------------------
+[Online] Time steps: 150000
+---------------------------------------
+Evaluation over 5 episodes: 3621.347, D4RL: 111.892, predicted_V: 290.443, gap: -3330.904
+---------------------------------------
+[Online] Time steps: 155000
+---------------------------------------
+Evaluation over 5 episodes: 3615.088, D4RL: 111.700, predicted_V: 285.858, gap: -3329.230
+---------------------------------------
+[Online] Time steps: 160000
+---------------------------------------
+Evaluation over 5 episodes: 3598.005, D4RL: 111.175, predicted_V: 282.705, gap: -3315.300
+---------------------------------------
+[Online] Time steps: 165000
+---------------------------------------
+Evaluation over 5 episodes: 3597.860, D4RL: 111.171, predicted_V: 279.721, gap: -3318.139
+---------------------------------------
+[Online] Time steps: 170000
+---------------------------------------
+Evaluation over 5 episodes: 3571.734, D4RL: 110.368, predicted_V: 279.975, gap: -3291.759
+---------------------------------------
+[Online] Time steps: 175000
+---------------------------------------
+Evaluation over 5 episodes: 3611.183, D4RL: 111.580, predicted_V: 277.237, gap: -3333.946
+---------------------------------------
+[Online] Time steps: 180000
+---------------------------------------
+Evaluation over 5 episodes: 3583.277, D4RL: 110.723, predicted_V: 282.300, gap: -3300.977
+---------------------------------------
+[Online] Time steps: 185000
+---------------------------------------
+Evaluation over 5 episodes: 3659.696, D4RL: 113.071, predicted_V: 284.611, gap: -3375.084
+---------------------------------------
+[Online] Time steps: 190000
+---------------------------------------
+Evaluation over 5 episodes: 3631.912, D4RL: 112.217, predicted_V: 278.026, gap: -3353.886
+---------------------------------------
+[Online] Time steps: 195000
+---------------------------------------
+Evaluation over 5 episodes: 3588.466, D4RL: 110.882, predicted_V: 276.618, gap: -3311.849
+---------------------------------------
+[Online] Time steps: 200000
+---------------------------------------
+Evaluation over 5 episodes: 3637.609, D4RL: 112.392, predicted_V: 282.052, gap: -3355.557
+---------------------------------------
+[Online] Time steps: 205000
+---------------------------------------
+Evaluation over 5 episodes: 3613.034, D4RL: 111.637, predicted_V: 282.626, gap: -3330.407
+---------------------------------------
+[Online] Time steps: 210000
+---------------------------------------
+Evaluation over 5 episodes: 3586.520, D4RL: 110.822, predicted_V: 279.350, gap: -3307.170
+---------------------------------------
+[Online] Time steps: 215000
+---------------------------------------
+Evaluation over 5 episodes: 3640.057, D4RL: 112.467, predicted_V: 275.162, gap: -3364.895
+---------------------------------------
+[Online] Time steps: 220000
+---------------------------------------
+Evaluation over 5 episodes: 590.527, D4RL: 18.767, predicted_V: 270.405, gap: -320.121
+---------------------------------------
+[Online] Time steps: 225000
+---------------------------------------
+Evaluation over 5 episodes: 601.145, D4RL: 19.094, predicted_V: 271.256, gap: -329.889
+---------------------------------------
+[Online] Time steps: 230000
+---------------------------------------
+Evaluation over 5 episodes: 3639.676, D4RL: 112.456, predicted_V: 275.079, gap: -3364.597
+---------------------------------------
+[Online] Time steps: 235000
+---------------------------------------
+Evaluation over 5 episodes: 3612.408, D4RL: 111.618, predicted_V: 276.531, gap: -3335.877
+---------------------------------------
+[Online] Time steps: 240000
+---------------------------------------
+Evaluation over 5 episodes: 3656.972, D4RL: 112.987, predicted_V: 270.594, gap: -3386.377
+---------------------------------------
+[Online] Time steps: 245000
+---------------------------------------
+Evaluation over 5 episodes: 3622.139, D4RL: 111.917, predicted_V: 277.720, gap: -3344.419
+---------------------------------------
+[Online] Time steps: 250000
+---------------------------------------
+Evaluation over 5 episodes: 3623.962, D4RL: 111.973, predicted_V: 284.520, gap: -3339.442
+---------------------------------------
+[Online] Time steps: 255000
+---------------------------------------
+Evaluation over 5 episodes: 3662.878, D4RL: 113.168, predicted_V: 287.723, gap: -3375.154
+---------------------------------------
+[Online] Time steps: 260000
+---------------------------------------
+Evaluation over 5 episodes: 3654.785, D4RL: 112.920, predicted_V: 281.068, gap: -3373.718
+---------------------------------------
+[Online] Time steps: 265000
+---------------------------------------
+Evaluation over 5 episodes: 3685.815, D4RL: 113.873, predicted_V: 276.531, gap: -3409.284
+---------------------------------------
+[Online] Time steps: 270000
+---------------------------------------
+Evaluation over 5 episodes: 2550.042, D4RL: 78.975, predicted_V: 278.733, gap: -2271.310
+---------------------------------------
+[Online] Time steps: 275000
+---------------------------------------
+Evaluation over 5 episodes: 3598.231, D4RL: 111.182, predicted_V: 273.151, gap: -3325.079
+---------------------------------------
+[Online] Time steps: 280000
+---------------------------------------
+Evaluation over 5 episodes: 3613.908, D4RL: 111.664, predicted_V: 271.420, gap: -3342.488
+---------------------------------------
+[Online] Time steps: 285000
+---------------------------------------
+Evaluation over 5 episodes: 3582.733, D4RL: 110.706, predicted_V: 270.436, gap: -3312.297
+---------------------------------------
+[Online] Time steps: 290000
+---------------------------------------
+Evaluation over 5 episodes: 3585.534, D4RL: 110.792, predicted_V: 264.783, gap: -3320.751
+---------------------------------------
+[Online] Time steps: 295000
+---------------------------------------
+Evaluation over 5 episodes: 3595.479, D4RL: 111.098, predicted_V: 268.329, gap: -3327.150
+---------------------------------------
+[Online] Time steps: 300000
+---------------------------------------
+Evaluation over 5 episodes: 3617.825, D4RL: 111.784, predicted_V: 265.484, gap: -3352.341
+---------------------------------------
+[Online] Time steps: 305000
+---------------------------------------
+Evaluation over 5 episodes: 3599.135, D4RL: 111.210, predicted_V: 259.030, gap: -3340.104
+---------------------------------------
+[Online] Time steps: 310000
+---------------------------------------
+Evaluation over 5 episodes: 3590.857, D4RL: 110.956, predicted_V: 259.727, gap: -3331.131
+---------------------------------------
+[Online] Time steps: 315000
+---------------------------------------
+Evaluation over 5 episodes: 3640.801, D4RL: 112.490, predicted_V: 264.989, gap: -3375.812
+---------------------------------------
+[Online] Time steps: 320000
+---------------------------------------
+Evaluation over 5 episodes: 3632.262, D4RL: 112.228, predicted_V: 259.644, gap: -3372.618
+---------------------------------------
+[Online] Time steps: 325000
+---------------------------------------
+Evaluation over 5 episodes: 3636.084, D4RL: 112.345, predicted_V: 263.156, gap: -3372.928
+---------------------------------------
+[Online] Time steps: 330000
+---------------------------------------
+Evaluation over 5 episodes: 3614.000, D4RL: 111.667, predicted_V: 263.241, gap: -3350.758
