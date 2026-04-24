@@ -14,7 +14,7 @@ import TD3
 
 # Runs policy for X episodes and returns D4RL score
 # A fixed seed is used for the eval environment
-def eval_policy(policy, env_name, seed, mean, std, seed_offset=100, eval_episodes=5):
+def eval_policy(policy, env_name, seed, mean, std, file_name, seed_offset=100, eval_episodes=5):
 	eval_env = gym.make(env_name)
 	eval_env.seed(seed + seed_offset)
 
@@ -33,6 +33,7 @@ def eval_policy(policy, env_name, seed, mean, std, seed_offset=100, eval_episode
 	print("---------------------------------------")
 	print(f"Evaluation over {eval_episodes} episodes: {avg_reward:.3f}, D4RL score: {d4rl_score:.3f}")
 	print("---------------------------------------")
+	np.save(f"./rewards/{file_name}_raw", avg_reward)
 	return d4rl_score
 
 
@@ -150,7 +151,7 @@ if __name__ == "__main__":
 		# Evaluate episode
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Offline] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std))
+			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, file_name))
 			np.save(f"./results/{file_name}", evaluations)
 			if args.save_model:
 				policy.save(f"./models/{file_name}")
@@ -249,7 +250,7 @@ if __name__ == "__main__":
 		# Evaluation
 		if (t + 1) % args.eval_freq == 0:
 			print(f"[Online] Time steps: {t+1}")
-			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std))
+			evaluations.append(eval_policy(policy, args.env, args.seed, mean, std, file_name))
 			np.save(f"./results/{file_name}", evaluations)
 
 			if args.save_model:
