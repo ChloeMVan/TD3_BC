@@ -8,9 +8,10 @@ OUTPUT_DIR = "results/graphs"
 # File from command line: python graph_rolling.py results/TD3_BC_hopper-random-v0_0.npy [--window 10]
 filename = sys.argv[1] if len(sys.argv) > 1 else input("Path to .npy file: ").strip()
 
-# Optional: --window 10, --eval_freq 5000
+# Optional: --window 10, --eval_freq 5000, --ylabel "D4RL score"
 window = 10
 eval_freq = 5000
+ylabel = "D4RL score"
 if "--window" in sys.argv:
 	idx = sys.argv.index("--window")
 	if idx + 1 < len(sys.argv):
@@ -19,6 +20,10 @@ if "--eval_freq" in sys.argv:
 	idx = sys.argv.index("--eval_freq")
 	if idx + 1 < len(sys.argv):
 		eval_freq = int(sys.argv[idx + 1])
+if "--ylabel" in sys.argv:
+	idx = sys.argv.index("--ylabel")
+	if idx + 1 < len(sys.argv):
+		ylabel = sys.argv[idx + 1]
 
 # Load scores
 scores = np.load(filename)
@@ -34,7 +39,7 @@ steps_rolling = steps[effective_window - 1 :]  # align: rolling[i] = mean(scores
 # Print data to terminal
 print(f"\nData from {filename} (rolling window = {window})")
 print("-" * 40)
-print(f"{'Step':>12}  {'D4RL score':>12}  {'Rolling avg':>12}")
+print(f"{'Step':>12}  {ylabel:>12}  {'Rolling avg':>12}")
 print("-" * 40)
 for i in range(len(scores)):
 	step = steps[i]
@@ -54,8 +59,8 @@ plt.plot(steps, scores, alpha=0.4, label="Raw score")
 plt.plot(steps_rolling, rolling, linewidth=2, label=f"Rolling avg (window={effective_window})")
 plt.axvline(x=500_000, color="red", linestyle="--", linewidth=1.5, label="Offline → Online")
 plt.xlabel("Step")
-plt.ylabel("D4RL score")
-plt.title(f"{env} — D4RL score vs time step")
+plt.ylabel(ylabel)
+plt.title(f"{env} — {ylabel} vs time step")
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
