@@ -74,6 +74,9 @@ if __name__ == "__main__":
 
 	if not os.path.exists("./lossresults"):
 		os.makedirs("./lossresults")
+	
+	if not os.path.exists("./q_results"):
+		os.makedirs("./q_results")
 
 	if args.save_model and not os.path.exists("./models"):
 		os.makedirs("./models")
@@ -130,9 +133,14 @@ if __name__ == "__main__":
 	evaluations = []
 	actorlosses = []
 	criticlosses = []
+	target_Q1s = []
+	target_Q2s = []
+	target_Qs = []
+	current_Q1s = []
+	current_Q2s = []
 	offline_steps_taken = 0
 	for t in range(int(args.max_timesteps)):
-		critic_loss, actor_loss = policy.train(replay_buffer, args.batch_size)
+		critic_loss, actor_loss, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 = policy.train(replay_buffer, args.batch_size)
 		if actor_loss is not None:
 			# actorlosses.append(actor_loss)
 			actorlosses.append(actor_loss.detach().cpu().numpy())
@@ -143,8 +151,18 @@ if __name__ == "__main__":
 
 		# criticlosses.append(critic_loss)
 		criticlosses.append(critic_loss.detach().cpu().numpy())
+		target_Q1s.append(target_Q1.detach().cpu().numpy())
+		target_Q2s.append(target_Q2.detach().cpu().numpy())
+		target_Qs.append(target_Q.detach().cpu().numpy())
+		current_Q1s.append(current_Q1.detach().cpu().numpy())
+		current_Q2s.append(current_Q2.detach().cpu().numpy())
 		np.save(f"./lossresults/{file_name}_actor", actorlosses)
 		np.save(f"./lossresults/{file_name}_critic", criticlosses)
+		np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+		np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+		np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+		np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+		np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 
 		offline_steps_taken = t + 1
 		# Evaluate episode
@@ -226,7 +244,7 @@ if __name__ == "__main__":
 
 		# Train policy only once we have enough transitions
 		if replay_buffer.size >= args.batch_size:
-			critic_loss, actor_loss = policy.train(replay_buffer, args.batch_size, beta=beta)
+			critic_loss, actor_loss, target_Q1, target_Q2, target_Q, current_Q1, current_Q2 = policy.train(replay_buffer, args.batch_size, beta=beta)
 			# criticlosses.append(critic_loss)
 			criticlosses.append(critic_loss.detach().cpu().numpy())
 			if actor_loss is not None:
@@ -236,6 +254,17 @@ if __name__ == "__main__":
 				actorlosses.append(actorlosses[-1])
 			else:
 				actorlosses.append(0)
+
+			target_Q1s.append(target_Q1.detach().cpu().numpy())
+			target_Q2s.append(target_Q2.detach().cpu().numpy())
+			target_Qs.append(target_Q.detach().cpu().numpy())
+			current_Q1s.append(current_Q1.detach().cpu().numpy())
+			current_Q2s.append(current_Q2.detach().cpu().numpy())
+			np.save(f"./q_results/{file_name}_target_Q1", target_Q1s)
+			np.save(f"./q_results/{file_name}_target_Q2", target_Q2s)
+			np.save(f"./q_results/{file_name}_target_Qs", target_Qs)
+			np.save(f"./q_results/{file_name}_current_Q1", current_Q1s)
+			np.save(f"./q_results/{file_name}_current_Q2", current_Q2s)
 			np.save(f"./lossresults/{file_name}_actor", actorlosses)
 			np.save(f"./lossresults/{file_name}_critic", criticlosses)
 			
